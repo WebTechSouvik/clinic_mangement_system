@@ -19,15 +19,15 @@ module.exports = {
       },
       cost: {
         type: Sequelize.STRING,
-          allowNull: false,
+        allowNull: false,
       },
-       is_done: {
+      is_done: {
         type: Sequelize.BOOLEAN,
-        defaultValue:false
+        defaultValue: false
       },
-       status: {
+      status: {
         type: Sequelize.BOOLEAN,
-        defaultValue:true
+        defaultValue: true
       },
       createdAt: {
         allowNull: false,
@@ -41,36 +41,36 @@ module.exports = {
         type: Sequelize.DataTypes.INTEGER,
         references: {
           model: {
-            tableName: 'medias',
-            schema: 'schema',
+            tableName: 'media',
+            key: 'id',
           },
-          key: 'id',
-        },
-        allowNull: false,
+          allowNull: false,
+          onUpdate: "CASCADE",
+          onDelete: "CASCADE"
+        }
       },
       appoinment_id: {
         type: Sequelize.DataTypes.INTEGER,
         references: {
-          model: {
-            tableName: 'appoinments',
-            schema: 'schema',
-          },
-          key: 'id',
+          model: "appointments",
+          key: "id",
         },
         allowNull: false,
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE"
       },
       appoinment_user_id: {
         type: Sequelize.DataTypes.INTEGER,
         references: {
-          model: {
-            tableName: 'users',
-            schema: 'schema',
-          },
-          key: 'id',
+          model: "users",
+          key: "id",
         },
         allowNull: false,
-      }
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
+      },
     });
+
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('Tests');

@@ -2,14 +2,14 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Medicines', {
+    await queryInterface.createTable('medicines', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-     name: {
+      name: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -19,23 +19,23 @@ module.exports = {
       },
       frequency: {
         type: Sequelize.STRING,
-          allowNull: false,
+        allowNull: false,
       },
-       duration: {
+      duration: {
         type: Sequelize.STRING,
-        defaultValue:false
+        defaultValue: false
       },
-       cost: {
+      cost: {
         type: Sequelize.FLOAT,
-       allowNull:
+        allowNull: false
       },
       note: {
         type: Sequelize.TEXT,
-        allowNull:true  
+        allowNull: true
       },
       status: {
         type: Sequelize.BOOLEAN,
-        defaultValue:true
+        defaultValue: true
       },
       createdAt: {
         allowNull: false,
@@ -49,23 +49,25 @@ module.exports = {
         type: Sequelize.DataTypes.INTEGER,
         references: {
           model: {
-            tableName: 'appoinments',
-            schema: 'schema',
+            tableName: 'appointments',
+            key: 'id'
           },
-          key: 'id',
-        },
-        allowNull: false,
+          allowNull: false,
+          onUpdate: 'CASCADE',
+          onDelete: 'CASCADE'
+        }
       },
       appoinment_user_id: {
         type: Sequelize.DataTypes.INTEGER,
         references: {
           model: {
             tableName: 'users',
-            schema: 'schema',
+            key: 'id'
           },
-          key: 'id',
-        },
-        allowNull: false,
+          allowNull: false,
+          onUpdate: 'CASCADE',
+          onDelete: 'CASCADE'
+        }
       }
     });
   },

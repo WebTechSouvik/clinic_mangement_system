@@ -36,14 +36,14 @@ module.exports = {
         allowNull: false
       },
       address_id: {
-        type: Sequelize.TEXT,
+        type: Sequelize.INTEGER,
         allowNull: false,
         references: {
           model: 'addresses',
           key: 'id'
         },
         onUpdate: 'CASCADE',
-        onDelete: 'SET NULL'
+        onDelete: 'CASCADE',
       },
       user_id: {
         type: Sequelize.INTEGER,
@@ -53,7 +53,7 @@ module.exports = {
           key: 'id'
         },
         onUpdate: 'CASCADE',
-        onDelete: 'SET NULL'
+        onDelete: 'CASCADE',
       },
       createdAt: {
         type: Sequelize.DATE,

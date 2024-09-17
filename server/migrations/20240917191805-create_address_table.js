@@ -45,3 +45,5 @@ module.exports = {
     return queryInterface.dropTable('addresses');
   }
 };
+
+// 20240917191805-create_address_table.js
