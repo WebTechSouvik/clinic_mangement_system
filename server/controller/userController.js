@@ -1,5 +1,5 @@
 const { where } = require("sequelize");
-const { User } = require("../../models");
+const { User } = require("../models");
 const generateToken = require("../utils/token");
 
 const userRegister = async (req, res) => {
