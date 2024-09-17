@@ -26,15 +26,22 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull:false
       },
-      role:{
-        type:Sequelize.ENUM(["user","admin"]),
-        defaultValue:'user'
-      },
       is_active:{
         type:Sequelize.BOOLEAN,
         defaultValue:true
-      }
-     
+      },
+      created_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+        defaultValue: Sequelize.fn('NOW'),
+      },
+      updated_at: {
+        type: Sequelize.DATE,
+
+        allowNull: false,
+        defaultValue: Sequelize.fn('NOW'),
+
+      },
     });
   },
   async down(queryInterface, Sequelize) {
