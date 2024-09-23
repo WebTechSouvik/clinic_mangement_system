@@ -3,13 +3,22 @@ const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
- 
-
     static associate(models) {
-      User.hasMany(models.Patient,{
-        foreignKey:id
-      })
-   
+      User.hasMany(models.Patient, {
+        foreignKey: "user_id",
+      });
+
+      User.hasMany(models.Appoinment, {
+        foreignKey: "user_id",
+      });
+
+        User.hasMany(models.Medicine, {
+        foreignKey: "user_id",
+      });
+
+         User.hasMany(models.Test, {
+        foreignKey: "user_id",
+      });
     }
   }
   User.init(
@@ -34,10 +43,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-        is_active: {
+      is_active: {
         type: DataTypes.BOOLEAN,
-        defaultValue:true
-      
+        defaultValue: true,
       },
     },
     {

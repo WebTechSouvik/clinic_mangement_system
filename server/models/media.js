@@ -3,7 +3,14 @@ const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class Media extends Model {
-    static associate(models) {}
+    static associate(models) {
+      Media.hasOne(models.Appoinment, {
+        foreignKey: "media_id",
+      });
+      Media.hasOne(models.Test, {
+        foreignKey: "media_id",
+      });
+    }
   }
   Media.init(
     {

@@ -3,7 +3,15 @@ const { Model, DataTypes } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class Address extends Model {
-    static associate(models) {}
+    static associate(models) {
+      Address.hasOne(models.Patient, {
+        foreignKey: "address_id",
+      });
+
+      Address.belongsTo(models.City, {
+        foreignKey: "city_id",
+      });
+    }
   }
   Address.init(
     {
@@ -20,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: "Address",
-      tableName: "addresses",
+
       timestamps: true,
     },
   );

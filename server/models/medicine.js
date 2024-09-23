@@ -3,9 +3,17 @@ const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class Medicine extends Model {
-    static associate(models) {}
+    static associate(models) {
+      Medicine.belongsTo(models.Appoinment, {
+        foreignKey: "appoinment_id",
+      });
+      Medicine.belongsTo(models.User, {
+        foreignKey: "appoinment_user_id",
+      });
+     
+    }
   }
-Medicine.init(
+  Medicine.init(
     {
       name: {
         type: DataTypes.STRING,
@@ -39,7 +47,7 @@ Medicine.init(
     {
       timestamps: true,
       sequelize,
-      modelName:"Medicine",
+      modelName: "Medicine",
     },
   );
   return Medicine;

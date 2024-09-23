@@ -2,10 +2,18 @@
 const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
-  class States extends Model {
-    static associate(models) {}
+  class State extends Model {
+    static associate(models) {
+      State.belongsTo(models.Country, {
+        foreignKey: "country_id",
+      });
+
+      State.hasMany(models.City,{
+        foreignKey:"state_id"
+      })
+    }
   }
-  States.init(
+  State.init(
     {
       state_name: {
         type: DataTypes.STRING,
@@ -15,8 +23,8 @@ module.exports = (sequelize, DataTypes) => {
     {
       timestamps: true,
       sequelize,
-      modelName: "States",
+      modelName: "State",
     },
   );
-  return States;
+  return State;
 };

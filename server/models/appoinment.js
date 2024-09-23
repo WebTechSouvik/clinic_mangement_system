@@ -3,7 +3,27 @@ const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class Appoinment extends Model {
-    static associate(models) {}
+    static associate(models) {
+      Appoinment.belongsTo(models.User, {
+        foreignKey: "user_id",
+      });
+
+      Appoinment.belongsTo(models.Patient, {
+        foreignKey: "patient_details_id",
+      });
+
+      Appoinment.hasMany(models.Test, {
+        foreignKey: "appoinment_user_id",
+      });
+
+      Appoinment.hasMany(models.Medicine, {
+        foreignKey: "appoinment_user_id",
+      });
+
+      Appoinment.belongsTo(models.Media, {
+        foreignKey: "media_id",
+      });
+    }
   }
   Appoinment.init(
     {
@@ -57,7 +77,7 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: true,
       sequelize,
       modelName: "Appoinment",
-      tableName:"appointments"
+      tableName: "appointments",
     },
   );
   return Appoinment;
