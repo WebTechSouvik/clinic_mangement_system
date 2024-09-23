@@ -5,8 +5,8 @@ module.exports = (sequelize, DataTypes) => {
   class Patient extends Model {
     static associate(models) {
 
-      Patient.belongsTo(models.User,{
-        foreignKey:id
+      Patient.belongsTo(models.User, {
+        foreignKey: "userId"
       })
     }
   }

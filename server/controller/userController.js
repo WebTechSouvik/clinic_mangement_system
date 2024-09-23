@@ -13,7 +13,7 @@ const createUserController = async (req, res) => {
         }
 
 
-        const existingUser = await User.findOne({ where: { email:email } });
+        const existingUser = await User.findOne({ where: { email } });
         if (existingUser) {
             return res.status(400).json({ error: "Email already in use" });
         }
@@ -45,7 +45,7 @@ const logInController = async (req, res) => {
     try{
 
         const{email,password} = req.body;
-        const user = await User.findOne({ where: { email:email } });
+        const user = await User.findOne({ where: {email} });
         if (!user) {
             return res.status(401).json({ error: "Invalid email or password" });
         }
