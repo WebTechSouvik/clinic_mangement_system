@@ -2,14 +2,14 @@
 const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
-  class Add extends Model {
+  class Address extends Model {
  
 
     static associate(models) {
    
     }
   }
-  Add.init(
+  Address.init(
     {
         address_line_1: {
         type: DatatTypes.STRING,
@@ -20,12 +20,13 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
 
       }
+    },
       
     {
       timestamps: true,
       sequelize,
-      modelName: "Add",
+      modelName: "Address",
     },
   );
-  return Add;
+  return Address;
 };
