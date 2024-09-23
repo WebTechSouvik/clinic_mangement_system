@@ -8,12 +8,14 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "user_id",
       });
 
+
       Patient.belongsTo(models.Address,{
         foreignKey:"address_id"
       })
 
        Patient.hasMany(models.Appoinment,{
         foreignKey:"patient_details_id"
+
       })
     }
 

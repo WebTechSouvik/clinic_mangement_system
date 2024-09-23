@@ -4,6 +4,7 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate(models) {
+
       User.hasMany(models.Patient, {
         foreignKey: "user_id",
       });
@@ -19,6 +20,8 @@ module.exports = (sequelize, DataTypes) => {
          User.hasMany(models.Test, {
         foreignKey: "user_id",
       });
+
+
     }
   }
   User.init(
@@ -55,5 +58,21 @@ module.exports = (sequelize, DataTypes) => {
       modelName: "User",
     },
   );
+   User.beforeCreate(async (user, options) => {
+        const salt = await bcrypt.genSalt(10);
+        const hashPassword = await bcrypt.hash(user.password, salt);
+        user.password = hashPassword;
+    });
+
+
+    // User.prototype.comparePassword = async function (candidatePassword) {
+    //     try {
+    //         const isMatch = await bcrypt.compare(candidatePassword, this.password);
+    //         return isMatch;
+    //     } catch (err) {
+    //         throw new Error(err);
+    //     }
+    // }
+
   return User;
 };

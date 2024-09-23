@@ -9,12 +9,13 @@ const {
 
 const createUserController = async (req, res) => {
     try {
-        const { first_name, last_name, email, password, phoneNo } = req.body;
+        const { first_name, last_name, email, password } = req.body;
         if (!first_name || !last_name || !email || !password) {
             return res.status(400).json({ error: "Missing required fields" });
         }
 
-        const existingUser = await User.findOne({ where: { email: email } });
+        const existingUser = await User.findOne({ where: { email } });
+
         if (existingUser) {
             return res.status(400).json({ error: "Email already in use" });
         }
@@ -42,9 +43,12 @@ const updateUserController = async (req, res) => {
 // const signIn
 
 const logInController = async (req, res) => {
-    try {
-        const { email, password } = req.body;
-        const user = await User.findOne({ where: { email: email } });
+
+    try{
+
+        const{email,password} = req.body;
+        const user = await User.findOne({ where: {email} });
+
         if (!user) {
             return res.status(401).json({ error: "Invalid email or password" });
         }
