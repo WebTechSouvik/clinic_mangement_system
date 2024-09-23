@@ -1,19 +1,21 @@
-const express = require('express');
-const userService = require('../services/userService');
-const logger = require('../config/logger');
-const {User} = require('../models');
-const { jwtAuthMiddleware, generateToken } = require('../middlewares/jwtAuthMiddleware');
-
+const express = require("express");
+const userService = require("../services/userService");
+const logger = require("../config/logger");
+const { User } = require("../models");
+const {
+    jwtAuthMiddleware,
+    generateToken,
+} = require("../middlewares/jwtAuthMiddleware");
 
 const createUserController = async (req, res) => {
     try {
-        const { first_name, last_name, email, password, phoneNo } = req.body;
+        const { first_name, last_name, email, password } = req.body;
         if (!first_name || !last_name || !email || !password) {
             return res.status(400).json({ error: "Missing required fields" });
         }
 
-
         const existingUser = await User.findOne({ where: { email } });
+
         if (existingUser) {
             return res.status(400).json({ error: "Email already in use" });
         }
@@ -25,7 +27,7 @@ const createUserController = async (req, res) => {
         logger.error(`Err: ${err}`);
         res.status(500).json({ message: err.message });
     }
-}
+};
 
 const updateUserController = async (req, res) => {
     try {
@@ -36,16 +38,17 @@ const updateUserController = async (req, res) => {
         logger.error(`Err: ${err}`);
         res.status(500).json({ message: err.message });
     }
-}
+};
 
-
-// const signIn 
+// const signIn
 
 const logInController = async (req, res) => {
+
     try{
 
         const{email,password} = req.body;
         const user = await User.findOne({ where: {email} });
+
         if (!user) {
             return res.status(401).json({ error: "Invalid email or password" });
         }
@@ -56,19 +59,22 @@ const logInController = async (req, res) => {
         }
 
         const token = generateToken(user.id);
-        res.cookie('authToken', token, { httpOnly: true,expires: new Date(Date.now() +50000) });
+        res.cookie("authToken", token, {
+            httpOnly: true,
+            expires: new Date(Date.now() + 50000),
+        });
 
         res.status(200).json({ message: "User signed in successfully", token });
-    }catch(err){
+    } catch (err) {
         logger.error(err);
         res.status(500).json({ error: "Internal server error" });
     }
-}
+};
 
 const logoutController = async (req, res) => {
     try {
         // Clear the authToken cookie
-        res.clearCookie('authToken');
+        res.clearCookie("authToken");
         res.status(200).json({ message: "User logged out successfully" });
     } catch (err) {
         logger.error(err);
@@ -80,5 +86,5 @@ module.exports = {
     createUserController,
     logInController,
     logoutController,
-    updateUserController
-}
+    updateUserController,
+};

@@ -2,13 +2,10 @@
 const { Model, DataTypes } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
-  class Add extends Model {
-    static associate(models) {
-      // Define associations here if needed in the future
-    }
+  class Address extends Model {
+    static associate(models) {}
   }
-
-  Add.init(
+  Address.init(
     {
       address_line_1: {
         type: DataTypes.STRING,
@@ -16,16 +13,17 @@ module.exports = (sequelize, DataTypes) => {
       },
       address_line_2: {
         type: DataTypes.STRING,
-        allowNull: true, // You can set it to `false` if it's mandatory
+        allowNull: true,
       },
     },
+
     {
       sequelize,
-      modelName: "Add", // Model name
-      tableName: "addresses", // Table name in the database
-      timestamps: true, // To enable createdAt and updatedAt fields
-    }
+      modelName: "Address",
+      tableName: "addresses",
+      timestamps: true,
+    },
   );
 
-  return Add;
+  return Address;
 };
