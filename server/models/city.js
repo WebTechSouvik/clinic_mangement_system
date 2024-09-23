@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   City.init(
     {
       city_name: {
-        type: DatatTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
     },

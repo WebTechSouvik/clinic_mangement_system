@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   States.init(
     {
       state_name: {
-        type: DatatTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
     },
