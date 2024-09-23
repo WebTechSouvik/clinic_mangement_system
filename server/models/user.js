@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
 
     static associate(models) {
       User.hasMany(models.Patient,{
-        foreignKey:user_id
+        foreignKey:id
       })
    
     }
@@ -43,6 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       timestamps: true,
       sequelize,
+      tableName: "users",
       modelName: "User",
     },
   );

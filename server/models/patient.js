@@ -6,22 +6,22 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
 
       Patient.belongsTo(models.User,{
-        foreignKey:user_id
+        foreignKey:id
       })
     }
   }
   Patient.init(
     {
       first_name: {
-        type: DatatTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       last_name: {
-        type: DatatTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       phone_no: {
-        type: DatatTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
         validate: {
           isNumeric: true,
@@ -29,16 +29,16 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       gender: {
-        type: DatatTypes.ENUM,
+        type: DataTypes.ENUM,
         values: ["Male", "Female", "Other"],
         allowNull: false,
       },
       age: {
-        type: DatatTypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
       dob: {
-        type: DatatTypes.DATE,
+        type: DataTypes.DATE,
         allowNull: false,
       },
     },

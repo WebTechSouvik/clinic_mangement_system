@@ -8,47 +8,47 @@ module.exports = (sequelize, DataTypes) => {
   Appoinment.init(
     {
       appoinment_category: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       clinic_name: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       venue: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       date: {
-        type: DataType.DATE,
+        type: DataTypes.DATE,
         allowNull: false,
       },
       time: {
-        type: DataType.TIME,
+        type: DataTypes.TIME,
         allowNull: false,
       },
       doctor_first_name: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       doctor_last_name: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       doctor_phone_no: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
       },
       doctor_about: {
-        type: DataType.TEXT,
+        type: DataTypes.TEXT,
         allowNull: true,
       },
       fees: {
-        type: DataType.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
       status: {
-        type: DataType.BOOLEAN,
+        type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: true,
       },
@@ -57,6 +57,7 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: true,
       sequelize,
       modelName: "Appoinment",
+      tableName:"appointments"
     },
   );
   return Appoinment;

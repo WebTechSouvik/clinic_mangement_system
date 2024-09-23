@@ -42,5 +42,5 @@ Medicine.init(
       modelName:"Medicine",
     },
   );
-  returMedicine;
+  return Medicine;
 };
