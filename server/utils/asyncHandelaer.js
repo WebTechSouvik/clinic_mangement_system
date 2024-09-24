@@ -5,3 +5,4 @@ const asyncHandeler = (fn) => {
 		});
 	};
 };
+ module.exports=asyncHandeler
