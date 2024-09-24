@@ -1,21 +1,46 @@
-const {Patient}=require("../models")
-const { createPtaient } = require("../services/patientService")
-const asyncHandeler = require("../utils/asyncHandelaer")
+const { Patient } = require("../models");
+const {
+	createPtaient,
+	getAllPatientByUser,
+	getPatientsDetailsByID,
+} = require("../services/patientService");
+const asyncHandeler = require("../utils/asyncHandelaer");
 
+const createPatientController = asyncHandeler(async (req, res) => {
+	const id = req.user.id;
 
+	const patient = await createPtaient(id, req.body);
 
-const createPatientController=asyncHandeler(async(req,res)=>{
+	res.status(201).json({
+		status: "sucess",
+		message: "patient created successfull",
+		patient,
+	});
+});
 
-	const id=req.user.id
+const getAllPatientController = asyncHandeler(async (req, res) => {
+	const { id } = req.params;
 
-	const patient=await createPtaient(id,req.body)
+	const allpatient = await getAllPatientByUser(id);
 
+	if (allpatient.length == 0) {
+		return res.status(200).json({ message: "cant find any patient" });
+	}
 
-	res.status(201).json({status:"sucess",message:"patient created successfull",patient})
+	return res.status(200).json({ allpatient });
+});
 
+const getDeatilsOfPatient = asyncHandeler(async (req, res) => {
+	const { id } = req.params;
 
-})
+	const patientDetalis = await getPatientsDetailsByID(id);
 
-module.exports={
-	createPatientController
-}
+	
+	return res.status(200).json({ patientDetalis });
+});
+
+module.exports = {
+	createPatientController,
+	getAllPatientController,
+	getDeatilsOfPatient,
+};
