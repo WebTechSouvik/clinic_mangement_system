@@ -1,0 +1,41 @@
+tr i{
+	color: red;
+}
+thead th {
+  color: #ffffff !important;
+  background-color: #4747A1 !important;
+  font-weight: 400;
+
+  }
+
+  .btn-add{
+  	border-color: #114B5F !important;
+  	color: #114B5F;
+
+  }
+  .btn-add:hover{
+  	background-color: #114B5F;
+  }
+  .active-btn{
+    background-color:#114B5F !important;
+    color: #ffffff !important;
+  }
+.page-container{
+  max-width: 264px;
+  overflow: hidden;
+}
+.scroll-container{
+   transition: transform 0.3s ease;
+}
+.page-item a{
+     padding: 0px;
+    width: 45px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+}
+form{
+  margin: 0px;
+}

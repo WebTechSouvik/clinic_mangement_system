@@ -22,6 +22,7 @@ const patientRouter = require("./routes/patientRouter.js")
 
 
 app.use('/assets', express.static(path.join(__dirname, 'views', 'assets')));
+app.use("/views",express.static(path.join(__dirname,"views")))
 app.use(cookieParser());
 app.set('view engine', 'ejs');
 
