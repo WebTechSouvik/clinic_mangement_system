@@ -1,3 +1,4 @@
+
 const { Patient } = require("../models");
 const {
 	createPtaient,
@@ -44,3 +45,5 @@ module.exports = {
 	getAllPatientController,
 	getDeatilsOfPatient,
 };
+
+   

@@ -1,3 +1,4 @@
+
 const {Router}=require("express")
 const { jwtAuthMiddleware } = require('../middlewares/jwtAuthMiddleware');
 const { createPatientController, getAllPatientController, getDeatilsOfPatient } = require("../controller/patientController");
@@ -14,3 +15,4 @@ router.route("/detalis/:id").get(getDeatilsOfPatient)
 
 
 module.exports=router
+

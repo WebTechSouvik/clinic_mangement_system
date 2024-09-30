@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/views/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/views/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/views/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="/views/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="/views/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/views/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Template Main CSS File -->
+    <link href="/views/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+      * Template Name: NiceAdmin
+      * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+      * Updated: Apr 20 2024 with Bootstrap v5.3.3
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="/views/assets/website_logo/logo.png" alt="">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="ms-auto">
+            <a class="btn btn-outline-danger rounded-5" href="#about">Sign out</a>
+        </div>
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+        <div>
+            <div class="sidebar-profile">
+                <img src="/views/assets/profile/profile-img.jpg">
+            </div>
+            <p class="text-center mt-2">John Doe</p>
+        </div>
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/views/patient_home.ejs">
+                    <i class="bi bi-journal-text"></i><span>Patient</span>
+                </a>
+            </li><!-- End Forms Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Appoinment</span>
+                </a>
+            </li><!-- End Tables Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse"
+                    href="/views/medicine_home.ejs">
+                    <i class="bi bi-bar-chart"></i><span>Medicine</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-bar-chart"></i><span>Test</span>
+                </a>
+            </li>
+            <!-- End Charts Nav -->
+        </ul>
+
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer mt-auto">
+            <ul class="sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-top: 10rem;">
+                        <i class="bi bi-person"></i></i><span>Profile</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div><!-- End Sidebar Footer -->
+
+    </aside><!-- End Sidebar -->
+
+    <main id="main" class="main">
+        <section>
+            <div class="row">
+                <div class="text-">
+                    <h5 class="fw-bold">Medication Details for Appointment #201</h5>
+                    <p class="font-monospace">Review the prescribed medicines and follow the instructions carefully.</p>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #eee;">
+            <div class="container py-4">
+                <div class="row">
+                    <!-- Patient Information Section -->
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="card mb-4">
+                            <div class="card-body p-3">
+                                <!-- Patient and Doctor Info Wrapper -->
+                                <div class="d-flex justify-content-between">
+                                    <!-- Patient Info -->
+                                    <div class="text-start">
+                                        <span><strong><i class="fa-solid fa-user me-2"></i>Patient Name:</strong> Srijan
+                                            Giri</span>
+                                    </div>
+                                    <!-- Doctor Info -->
+                                    <div class="text-end">
+                                        <span><strong><i class="fa-solid fa-user-doctor me-2"></i>Doctor Name:</strong>
+                                            Dr.
+                                            Kunal Sarkar</span>
+                                    </div>
+                                </div>
+                                <!-- Additional Section for Repeated Info (If Required) -->
+                                <div class="d-flex justify-content-between mt-3">
+                                    <!-- Patient Info -->
+                                    <div class="text-start">
+                                        <span><strong><i class="bi bi-bookmark-check-fill me-2"></i>Appoinment
+                                                For:</strong> Orthopedic Problem(Osteoporosis)</span>
+                                    </div>
+                                    <!-- Doctor Info -->
+                                    <div class="text-end">
+                                        <span><strong><i class="fa-solid fa-calendar-check me-2"></i>Appoinment
+                                                Date:</strong> 29-09-2024</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <!-- Patient Info -->
+                                    <div class="text-start">
+                                        <span><strong><i class="fa-solid fa-house-chimney-medical me-2"></i>Clinic
+                                                Name:</strong> Roy's Clinic</span>
+                                    </div>
+                                    <!-- Doctor Info -->
+                                    <div class="text-end">
+                                        <span><strong><i class="bi bi-geo-alt-fill me-2"></i>Clinic
+                                                Venue:</strong> ABC Road,Kolkata</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Patient Image Section -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 d-flex align-items-center justify-content-center">
+                        <div class="card mb-4">
+                            <div class="card-body p-0">
+                                <img src="/views/assets/img/profile-img.jpg" alt="Patient Image"
+                                    class="img-fluid shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-3">
+            <form action="#">
+                <button type="submit" class="btn btn-success text-white" data-bs-toggle="modal"
+                    data-bs-target="#modalDialogScrollable">Add Medicine</button>
+            </form>
+
+            <div class="modal fade" id="modalDialogScrollable" tabindex="-1"
+                aria-labelledby="modalDialogScrollableLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDialogScrollableLabel">Add Patient</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add Patient Form -->
+                            <form id="addPatientForm" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="medicineName" class="form-label">Medicine Name</label>
+                                    <input type="text" class="form-control" id="medicineName"
+                                        placeholder="Enter medicine name like Amoxicillin" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="brandName" class="form-label">Brand Name</label>
+                                    <input type="text" class="form-control" id="brandName"
+                                        placeholder="Enter brand name like Sun Pharma" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="dosage" class="form-label">Dosage</label>
+                                    <input type="text" class="form-control" id="dosage" placeholder="Enter dosage"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="frequency" class="form-label">Frequency</label>
+                                    <input type="text" class="form-control" id="frequency" placeholder="Enter frequency"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cost" class="form-label">Cost</label>
+                                    <input type="number" class="form-control" id="cost" placeholder="Enter cost">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="notes" class="form-label">Notes</label>
+                                    <textarea class="form-control" id="notes" rows="3" required></textarea>
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <form action="#">
+                                        <button type="submit" class="btn btn-primary">Add Patient</button>
+                                    </form>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-2">
+            <div class="row">
+                <div class="container">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col" class="text-center">#</th>
+                                    <th scope="col" class="text-center">Medicine Name</th>
+                                    <th scope="col" class="text-center">Brand</th>
+                                    <th scope="col" class="text-center">Dosage</th>
+                                    <th scope="col" class="text-center">Frequency</th>
+                                    <th scope="col" class="text-center">Cost</th>
+                                    <th scope="col" class="text-center">Notes</th>
+                                    <th scope="col" colspan="2" class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="text-center">1</th>
+                                    <td class="text-center">Amoxicillin</td>
+                                    <td class="text-center">Sun Pharma</td>
+                                    <td class="text-center">twicw a day</td>
+                                    <td class="text-center">7 days</td>
+                                    <td class="text-center">Rs.500</td>
+                                    <td class="text-center">take beefore food...</td>
+                                    <td class="text-center d-flex justify-content-center">
+                                        <form action="#" class="me-2">
+                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
+                                        </form>
+
+                                        <form action="#">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                    <div class="modal fade" id="modalDialogScrollableLabelEdit" tabindex="-1"
+                                        aria-labelledby="modalDialogScrollableLabelEdit" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable modal-md">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDialogScrollableLabelEdit">Edit
+                                                        Medicine
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Add Patient Form -->
+                                                    <form id="addPatientForm" enctype="multipart/form-data">
+                                                        <div class="mb-3">
+                                                            <label for="medicineName" class="form-label">Medicine
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="medicineName"
+                                                                value="Amoxicillin" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="brandName" class="form-label">Brand
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="brandName"
+                                                                value="Sun Pharma" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="dosage" class="form-label">Dosage</label>
+                                                            <input type="text" class="form-control" id="dosage"
+                                                                value="twicw a day" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="frequency" class="form-label">Frequency</label>
+                                                            <input type="text" class="form-control" id="frequency"
+                                                                value="7 days" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="cost" class="form-label">Cost</label>
+                                                            <input type="number" class="form-control" id="cost"
+                                                                value="500">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="notes" class="form-label">Notes</label>
+                                                            <textarea class="form-control" id="notes" rows="3"
+                                                                required>take before food and mix with water</textarea>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-end">
+                                                            <form action="#">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Edit</button>
+                                                            </form>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center">2</th>
+                                    <td class="text-center">Amoxicillin</td>
+                                    <td class="text-center">Sun Pharma</td>
+                                    <td class="text-center">twicw a day</td>
+                                    <td class="text-center">7 days</td>
+                                    <td class="text-center">Rs.500</td>
+                                    <td class="text-center">take beefore food...</td>
+                                    <td class="text-center d-flex justify-content-center">
+                                        <form action="#" class="me-2">
+                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
+                                        </form>
+                                        <form action="#">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                    <div class="modal fade" id="modalDialogScrollableLabelEdit" tabindex="-1"
+                                        aria-labelledby="modalDialogScrollableLabelEdit" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable modal-md">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDialogScrollableLabelEdit">Edit
+                                                        Medicine
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Add Patient Form -->
+                                                    <form id="addPatientForm" enctype="multipart/form-data">
+                                                        <div class="mb-3">
+                                                            <label for="medicineName" class="form-label">Medicine
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="medicineName"
+                                                                value="Amoxicillin" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="brandName" class="form-label">Brand
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="brandName"
+                                                                value="Sun Pharma" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="dosage" class="form-label">Dosage</label>
+                                                            <input type="text" class="form-control" id="dosage"
+                                                                value="twicw a day" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="frequency" class="form-label">Frequency</label>
+                                                            <input type="text" class="form-control" id="frequency"
+                                                                value="7 days" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="cost" class="form-label">Cost</label>
+                                                            <input type="number" class="form-control" id="cost"
+                                                                value="500">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="notes" class="form-label">Notes</label>
+                                                            <textarea class="form-control" id="notes" rows="3"
+                                                                required>take before food and mix with water</textarea>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-end">
+                                                            <form action="#">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Edit</button>
+                                                            </form>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center">3</th>
+                                    <td class="text-center">Amoxicillin</td>
+                                    <td class="text-center">Sun Pharma</td>
+                                    <td class="text-center">twicw a day</td>
+                                    <td class="text-center">7 days</td>
+                                    <td class="text-center">Rs.500</td>
+                                    <td class="text-center">take beefore food...</td>
+                                    <td class="text-center d-flex justify-content-center">
+                                        <form action="#" class="me-2">
+                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
+                                        </form>
+                                        <form action="#">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                    <div class="modal fade" id="modalDialogScrollableLabelEdit" tabindex="-1"
+                                        aria-labelledby="modalDialogScrollableLabelEdit" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable modal-md">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDialogScrollableLabelEdit">Edit
+                                                        Medicine
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Add Patient Form -->
+                                                    <form id="addPatientForm" enctype="multipart/form-data">
+                                                        <div class="mb-3">
+                                                            <label for="medicineName" class="form-label">Medicine
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="medicineName"
+                                                                value="Amoxicillin" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="brandName" class="form-label">Brand
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="brandName"
+                                                                value="Sun Pharma" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="dosage" class="form-label">Dosage</label>
+                                                            <input type="text" class="form-control" id="dosage"
+                                                                value="twicw a day" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="frequency" class="form-label">Frequency</label>
+                                                            <input type="text" class="form-control" id="frequency"
+                                                                value="7 days" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="cost" class="form-label">Cost</label>
+                                                            <input type="number" class="form-control" id="cost"
+                                                                value="500">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="notes" class="form-label">Notes</label>
+                                                            <textarea class="form-control" id="notes" rows="3"
+                                                                required>take before food and mix with water</textarea>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-end">
+                                                            <form action="#">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Edit</button>
+                                                            </form>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center">4</th>
+                                    <td class="text-center">Amoxicillin</td>
+                                    <td class="text-center">Sun Pharma</td>
+                                    <td class="text-center">twicw a day</td>
+                                    <td class="text-center">7 days</td>
+                                    <td class="text-center">Rs.500</td>
+                                    <td class="text-center">take beefore food...</td>
+                                    <td class="text-center d-flex justify-content-center">
+                                        <form action="#" class="me-2">
+                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
+                                        </form>
+                                        <form action="#">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                    <div class="modal fade" id="modalDialogScrollableLabelEdit" tabindex="-1"
+                                        aria-labelledby="modalDialogScrollableLabelEdit" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable modal-md">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDialogScrollableLabelEdit">Edit
+                                                        Medicine
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Add Patient Form -->
+                                                    <form id="addPatientForm" enctype="multipart/form-data">
+                                                        <div class="mb-3">
+                                                            <label for="medicineName" class="form-label">Medicine
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="medicineName"
+                                                                value="Amoxicillin" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="brandName" class="form-label">Brand
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="brandName"
+                                                                value="Sun Pharma" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="dosage" class="form-label">Dosage</label>
+                                                            <input type="text" class="form-control" id="dosage"
+                                                                value="twicw a day" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="frequency" class="form-label">Frequency</label>
+                                                            <input type="text" class="form-control" id="frequency"
+                                                                value="7 days" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="cost" class="form-label">Cost</label>
+                                                            <input type="number" class="form-control" id="cost"
+                                                                value="500">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="notes" class="form-label">Notes</label>
+                                                            <textarea class="form-control" id="notes" rows="3"
+                                                                required>take before food and mix with water</textarea>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-end">
+                                                            <form action="#">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Edit</button>
+                                                            </form>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center">5</th>
+                                    <td class="text-center">Amoxicillin</td>
+                                    <td class="text-center">Sun Pharma</td>
+                                    <td class="text-center">twicw a day</td>
+                                    <td class="text-center">7 days</td>
+                                    <td class="text-center">Rs.500</td>
+                                    <td class="text-center">take beefore food...</td>
+                                    <td class="text-center d-flex justify-content-center">
+                                        <form action="#" class="me-2">
+                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
+                                        </form>
+                                        <form action="#">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                    <div class="modal fade" id="modalDialogScrollableLabelEdit" tabindex="-1"
+                                        aria-labelledby="modalDialogScrollableLabelEdit" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable modal-md">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDialogScrollableLabelEdit">Edit
+                                                        Medicine
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Add Patient Form -->
+                                                    <form id="addPatientForm" enctype="multipart/form-data">
+                                                        <div class="mb-3">
+                                                            <label for="medicineName" class="form-label">Medicine
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="medicineName"
+                                                                value="Amoxicillin" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="brandName" class="form-label">Brand
+                                                                Name</label>
+                                                            <input type="text" class="form-control" id="brandName"
+                                                                value="Sun Pharma" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="dosage" class="form-label">Dosage</label>
+                                                            <input type="text" class="form-control" id="dosage"
+                                                                value="twicw a day" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="frequency" class="form-label">Frequency</label>
+                                                            <input type="text" class="form-control" id="frequency"
+                                                                value="7 days" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="cost" class="form-label">Cost</label>
+                                                            <input type="number" class="form-control" id="cost"
+                                                                value="500">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="notes" class="form-label">Notes</label>
+                                                            <textarea class="form-control" id="notes" rows="3"
+                                                                required>take before food and mix with water</textarea>
+                                                        </div>
+
+                                                        <div class="d-flex justify-content-end">
+                                                            <form action="#">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Edit</button>
+                                                            </form>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="/views/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="/views/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/views/vendor/chart.js/chart.umd.js"></script>
+    <script src="/views/vendor/echarts/echarts.min.js"></script>
+    <script src="/views/vendor/quill/quill.js"></script>
+    <script src="/views/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="/views/vendor/tinymce/tinymce.min.js"></script>
+    <script src="/views/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/views/js/main.js"></script>
+
+</body>
+
+</html>

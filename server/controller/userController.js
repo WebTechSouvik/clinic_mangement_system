@@ -45,10 +45,10 @@ const updateUserController = async (req, res) => {
 
 const logInController = async (req, res) => {
 
-    try{
+    try {
 
-        const{email,password} = req.body;
-        const user = await User.findOne({ where: {email} });
+        const { email, password } = req.body;
+        const user = await User.findOne({ where: { email } });
 
         if (!user) {
             return res.status(401).json({ error: "Invalid email or password" });
@@ -84,9 +84,26 @@ const logoutController = async (req, res) => {
     }
 };
 
+const showSignInForm = async (req, res) => {
+    res.render('login');
+}
+
+const showSignUpForm = async (req, res) => {
+    res.render('signup');
+}
+
+const landingPage = async (req, res) => {
+    res.render('landing_page');
+}
+
 module.exports = {
     createUserController,
     logInController,
     logoutController,
     updateUserController,
+    showSignInForm,
+    showSignUpForm,
+    landingPage
 };
+
+
