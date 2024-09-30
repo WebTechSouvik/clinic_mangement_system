@@ -1,7 +1,18 @@
-const express = require('express');
-const patientRouter = express.Router();
-const patientController = require('../controller/patientController')
 
-patientRouter.get('/patientHome', patientController.showPatientHome);
+const {Router}=require("express")
+const { jwtAuthMiddleware } = require('../middlewares/jwtAuthMiddleware');
+const { createPatientController, getAllPatientController, getDeatilsOfPatient } = require("../controller/patientController");
 
-module.exports = patientRouter;
+const router=Router()
+
+
+
+router.use(jwtAuthMiddleware)
+
+router.route("/create").post(createPatientController)
+router.route("/:id").get(getAllPatientController)
+router.route("/detalis/:id").get(getDeatilsOfPatient)
+
+
+module.exports=router
+

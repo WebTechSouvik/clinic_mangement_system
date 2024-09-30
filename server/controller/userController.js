@@ -6,6 +6,7 @@ const {
     jwtAuthMiddleware,
     generateToken,
 } = require("../middlewares/jwtAuthMiddleware");
+const bcrypt=require("bcrypt")
 
 const createUserController = async (req, res) => {
     try {
@@ -61,12 +62,13 @@ const logInController = async (req, res) => {
         const token = generateToken(user.id);
         res.cookie("authToken", token, {
             httpOnly: true,
-            expires: new Date(Date.now() + 50000),
+            // expires: new Date(Date.now() + 50000),
         });
 
         res.status(200).json({ message: "User signed in successfully", token });
     } catch (err) {
         logger.error(err);
+        console.log(err)
         res.status(500).json({ error: "Internal server error" });
     }
 };

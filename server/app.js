@@ -5,25 +5,36 @@ const helloRouter = require("./routes/helloRouter.js");
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-const userRouter = require('./routes/userRouter');
-require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const errorMideleware = require("./middlewares/errorMidileware.js");
-const patientRouter = require('./routes/patientRouter.js');
+
+
+require('dotenv').config();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cookieParser());
+
+
+const userRouter = require('./routes/userRouter');
+const patientRouter = require("./routes/patientRouter.js")
+
+
 app.use('/assets', express.static(path.join(__dirname, 'views', 'assets')));
 app.use(cookieParser());
 app.set('view engine', 'ejs');
 
 
 
-// router
 
-// app.use('/', helloRouter);
-app.use('/', userRouter);
-app.use('/patients', patientRouter);
+
+app.use('/user', userRouter);
+app.use("/patient",patientRouter)
+app.use('/', helloRouter);
+
+
+
 
 
 
