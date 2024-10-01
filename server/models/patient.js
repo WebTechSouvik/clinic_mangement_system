@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       });
 
 
-      Patient.belongsTo(models.Address, {
+      Patient.hasMany(models.Address, {
         foreignKey: "address_id"
       })
 
@@ -57,7 +57,7 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: true,  // Enable timestamps
       sequelize,
       modelName: "Patient",
-    },
+    }
   );
 
   return Patient;

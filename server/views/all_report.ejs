@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joan&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  <!-- icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstarp CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="/views/css/style.css" rel="stylesheet">
+
+
+    <!-- =======================================================
+      * Template Name: NiceAdmin
+      * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+      * Updated: Apr 20 2024 with Bootstrap v5.3.3
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="/views/assets/website_logo/logo.png" alt="">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="ms-auto">
+        <a class="btn-login rounded-5" href="#about">Log out</a>
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <div>
+        <div class="sidebar-profile">
+          <img src="/assets/img/profile-img.jpg" />
+        </div>
+        <p class="text-center mt-2">John doe</p>
+      </div>
+
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="dashBoard.html">
+            <i class="bi bi-grid-fill"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
+          </a>
+        </li>
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="appionment.html"
+          >
+            <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
+          </a>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link "
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-pills"></i><span>Medicine</span>
+          </a>
+        </li>
+        <!-- End Tables Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link active-sidebar"
+            data-bs-target="#charts-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
+          </a>
+        </li>
+        <!-- End Charts Nav -->
+      </ul>
+    </aside>
+
+    <main id="main" class="main">
+        <section>
+            <div class="row">
+                <div class="text-">
+                    <h5 class="fw-bold">Test report for Appointment #12345</h5>
+                    <p >Review the prescribed Tests and follow the instructions carefully.</p>
+                </div>
+            </div>
+        </section>
+        <section class="rounded-3 bg-secondary-subtle">
+       
+                <div class="row">
+                    <!-- Patient Information Section -->
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                            <div class="bg-transparent p-4 row">
+                                <!-- Patient and Doctor Info Wrapper -->
+                                <div class="col-7 d-flex flex-column gap-3">
+                                   <div class="text-start">
+                                        <span><strong><i class="fa-solid fa-user me-2"></i>Patient Name:</strong> Srijan
+                                            Giri</span>
+                                    </div> 
+                                     <div class="text-start">
+                                        <span><strong><i class="bi bi-bookmark-check-fill me-2"></i>Appoinment
+                                                For:</strong> <span>Orthopedic Problem(Osteoporosis)</span></span>
+                                    </div>
+                                     <div class="text-start">
+                                        <span><strong><i class="fa-solid fa-house-chimney-medical me-2"></i>Clinic
+                                                Name:</strong> Roy's Clinic</span>
+                                    </div>
+                                </div>
+                                <div class="col-5 d-flex flex-column gap-3">
+                                     <div class="">
+                                        <span><strong><i class="fa-solid fa-user-doctor me-2"></i>Doctor Name:</strong>
+                                            Dr.
+                                            Kunal Sarkar</span>
+                                    </div>
+
+                                    <div class="">
+                                        <span><strong><i class="fa-solid fa-calendar-check me-2"></i>Appoinment
+                                                Date:</strong> 29-09-2024</span>
+                                    </div>
+                                     <div class="">
+                                        <span><strong><i class="bi bi-geo-alt-fill me-2"></i>Clinic
+                                                Venue:</strong> ABC Road,Kolkata</span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                     
+                    </div>
+                    <!-- Patient Image Section -->
+                    <div class="col-lg-2 col-md-2 col-sm-2 d-flex align-items-center justify-content-center">
+                        <div class=">
+                            <div class=-body p-0">
+                                <img src="/views/assets/img/profile-img.jpg" alt="Patient Image"
+                                    class="img-fluid shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+        </section>
+       <section class="my-3 mt-4">
+    <div
+        class="border-bottom border-black pb-2 d-flex justify-content-between align-items-center"
+    >
+        <h3 class="mb-0">Reports</h3>
+        <button
+            type="button"
+            class="btn btn-outline-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+        >
+            Generate Pdf
+        </button>
+    </div>
+
+    <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        John_doe_medical_reports.pdf
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                style="height: 380px"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" style="height: 380px">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon bg-secondary"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon bg-secondary"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">PDF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <div class="d-flex justify-content-between">
+            <p><span class="fw-bold">A.</span> Ultrasonography Test Report</p>
+            <p>Test Date:10/05/2022</p>
+        </div>
+
+        <div class="ps-4">
+            <p><span class="fw-bold">Labotary Name:</span> Welkin</p>
+            <p><span class="fw-bold">Cost:</span> 3000</p>
+            <div class="row row-gap-4">
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="d-flex justify-content-between">
+            <p><span class="fw-bold">B.</span> Ultrasonography Test Report</p>
+            <p>Test Date:10/05/2022</p>
+        </div>
+
+        <div class="ps-4">
+            <p><span class="fw-bold">Labotary Name:</span> Welkin</p>
+            <p><span class="fw-bold">Cost:</span> 3000</p>
+            <div class="row row-gap-4">
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+                <div class="col-3">
+                    <img
+                        class="w-100 card"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+   
+ <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script type="module" src="/views/js/add_Test.js"></script>
+ 
+</body>
+
+</html>

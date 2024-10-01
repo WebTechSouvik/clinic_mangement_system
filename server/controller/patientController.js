@@ -40,9 +40,9 @@ const getDeatilsOfPatient = asyncHandeler(async (req, res) => {
 	return res.status(200).json({ patientDetalis });
 });
 
-const showPatientHome = asyncHandeler(async (req, res) => {
+const showPatientHome = async (req, res) => {
 	res.render('patient_home')
-});
+};
 
 module.exports = {
 	createPatientController,
