@@ -1,0 +1,1884 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+        <title>Dashboard - NiceAdmin Bootstrap Template</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+
+        <!-- Favicons -->
+        <link href="/assets/img/favicon.png" rel="icon" />
+        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Joan&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- icon cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+
+        <!-- Bootstarp CSS Files -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Template Main CSS File -->
+        <link href="/views/css/style.css" rel="stylesheet" />
+        <link href="/views/css/appoinment.css" rel="stylesheet" />
+
+        <!-- =======================================================
+      * Template Name: NiceAdmin
+      * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+      * Updated: Apr 20 2024 with Bootstrap v5.3.3
+      * Author: BootstrapMade.com
+      * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+    </head>
+
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="header fixed-top d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <img src="/views/assets/website_logo/logo.png" alt="" />
+                </a>
+                <i class="bi bi-list toggle-sidebar-btn"></i>
+            </div>
+            <!-- End Logo -->
+
+            <div class="ms-auto">
+                <a class="btn-login rounded-5" href="#about">Log out</a>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- ======= Sidebar ======= -->
+        <aside id="sidebar" class="sidebar">
+            <div>
+                <div class="sidebar-profile">
+                    <img src="/assets/img/profile-img.jpg" />
+                </div>
+                <p class="text-center mt-2">John doe</p>
+            </div>
+
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashBoard.html">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <!-- End Dashboard Nav -->
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        data-bs-target="#components-nav"
+                        data-bs-toggle="collapse"
+                        href="#"
+                    >
+                        <i class="fa-solid fa-hospital-user"></i
+                        ><span>Patient</span>
+                    </a>
+                </li>
+                <!-- End Components Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="appionment.html">
+                        <i class="fa-regular fa-calendar-check"></i
+                        ><span>Appoinment</span>
+                    </a>
+                </li>
+                <!-- End Forms Nav -->
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        data-bs-target="#tables-nav"
+                        data-bs-toggle="collapse"
+                        href="#"
+                    >
+                        <i class="fa-solid fa-pills"></i><span>Medicine</span>
+                    </a>
+                </li>
+                <!-- End Tables Nav -->
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link active-sidebar"
+                        data-bs-target="#charts-nav"
+                        data-bs-toggle="collapse"
+                        href="#"
+                    >
+                        <i class="bi bi-clipboard2-pulse-fill"></i
+                        ><span>Test</span>
+                    </a>
+                </li>
+                <!-- End Charts Nav -->
+            </ul>
+        </aside>
+
+        <main id="main" class="main">
+            <section>
+                <div class="row">
+                    <div class="text-">
+                        <h5 class="fw-bold">
+                            Test Details for Appointment #12345
+                        </h5>
+                        <p>
+                            Review the prescribed Tests and follow the
+                            instructions carefully.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="rounded-3 bg-secondary-subtle">
+                <div class="row">
+                    <!-- Patient Information Section -->
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="bg-transparent p-4 row">
+                            <!-- Patient and Doctor Info Wrapper -->
+                            <div class="col-7 d-flex flex-column gap-3">
+                                <div class="text-start">
+                                    <span
+                                        ><strong
+                                            ><i
+                                                class="fa-solid fa-user me-2"
+                                            ></i
+                                            >Patient Name:</strong
+                                        >
+                                        Srijan Giri</span
+                                    >
+                                </div>
+                                <div class="text-start">
+                                    <span
+                                        ><strong
+                                            ><i
+                                                class="bi bi-bookmark-check-fill me-2"
+                                            ></i
+                                            >Appoinment For:</strong
+                                        >
+                                        <span
+                                            >Orthopedic
+                                            Problem(Osteoporosis)</span
+                                        ></span
+                                    >
+                                </div>
+                                <div class="text-start">
+                                    <span
+                                        ><strong
+                                            ><i
+                                                class="fa-solid fa-house-chimney-medical me-2"
+                                            ></i
+                                            >Clinic Name:</strong
+                                        >
+                                        Roy's Clinic</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-5 d-flex flex-column gap-3">
+                                <div class="">
+                                    <span
+                                        ><strong
+                                            ><i
+                                                class="fa-solid fa-user-doctor me-2"
+                                            ></i
+                                            >Doctor Name:</strong
+                                        >
+                                        Dr. Kunal Sarkar</span
+                                    >
+                                </div>
+
+                                <div class="">
+                                    <span
+                                        ><strong
+                                            ><i
+                                                class="fa-solid fa-calendar-check me-2"
+                                            ></i
+                                            >Appoinment Date:</strong
+                                        >
+                                        29-09-2024</span
+                                    >
+                                </div>
+                                <div class="">
+                                    <span
+                                        ><strong
+                                            ><i
+                                                class="bi bi-geo-alt-fill me-2"
+                                            ></i
+                                            >Clinic Venue:</strong
+                                        >
+                                        ABC Road,Kolkata</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Patient Image Section -->
+                    <div
+                        class="col-lg-2 col-md-2 col-sm-2 d-flex align-items-center justify-content-center"
+                    >
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img
+                                    src="/views/assets/img/profile-img.jpg"
+                                    alt="Patient Image"
+                                    class="img-fluid shadow"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="my-3">
+                <form action="#">
+                    <button
+                        type="submit"
+                        class="btn btn-success text-white"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalDialogScrollable"
+                    >
+                        Add Test
+                    </button>
+                </form>
+
+
+<!-- // add test popup -->
+                <div
+                    class="modal fade"
+                    id="modalDialogScrollable"
+                    tabindex="-1"
+                    aria-labelledby="modalDialogScrollableLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog modal-dialog-scrollable modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5
+                                    class="modal-title"
+                                    id="modalDialogScrollableLabel"
+                                >
+                                    Add Test
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Add Patient Form -->
+                                <form
+                                    id="addPatientForm"
+                                    enctype="multipart/form-data"
+                                >
+                                    <div class="mb-3">
+                                        <label for="testName" class="form-label"
+                                            >Test Name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="testName"
+                                            placeholder="Enter Test name like Blood Test"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="labotaryName"
+                                            class="form-label"
+                                            >Labotary Name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="labotaryName"
+                                            value="Sun Pharma"
+                                            placeholder="Enter brand name like Sun Pharma"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cost" class="form-label"
+                                            >Cost</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="cost"
+                                            value="3000"
+                                            placeholder="Enter dosage"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="date" class="form-label"
+                                            >Date</label
+                                        >
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            id="date"
+                                            value="2020-05-15"
+                                            placeholder="Enter dosage"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="status" class="form-label"
+                                            >Status</label
+                                        >
+                                        <select class="form-select" id="status">
+                                            <option value="no">No</option>
+                                            <option value="yes" selected>
+                                                Yes
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label"
+                                            >Upload for report</label
+                                        >
+                                        <input
+                                            id="input-b1"
+                                            name="input-b1"
+                                            type="file"
+                                            class="form-control"
+                                        />
+                                    </div>
+
+                                    <div class="d-flex justify-content-end">
+                                        <form action="#">
+                                            <button
+                                                type="submit"
+                                                class="btn btn-primary"
+                                            >
+                                                Add Test
+                                            </button>
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="my-2">
+                <div class="row">
+                    <div class="container">
+                        <div class="table-responsive">
+                            <table
+                                class="table table-hover table-striped align-middle"
+                            >
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col" class="text-center">
+                                            #
+                                        </th>
+                                        <th scope="col" class="text-center">
+                                            Test Name
+                                        </th>
+                                        <th scope="col" class="text-center">
+                                            Laboratory Name
+                                        </th>
+                                        <th scope="col" class="text-center">
+                                            Cost
+                                        </th>
+                                        <th scope="col" class="text-center">
+                                            Test Done
+                                        </th>
+                                        <th scope="col" class="text-center">
+                                            Date
+                                        </th>
+                                        <th scope="col" class="text-center">
+                                            Report
+                                        </th>
+                                        <th
+                                            scope="col"
+                                            colspan="2"
+                                            class="text-center"
+                                        >
+                                            Action
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            1
+                                        </th>
+                                        <td class="text-center">Blood Test</td>
+                                        <td class="text-center">Sun Pharma</td>
+                                        <td class="text-center">3000</td>
+                                        <td class="text-center">yes</td>
+                                        <td class="text-center">15/05/2020</td>
+                                        <td class="text-center">
+                                           
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportModal"
+                                                >
+                                                    View
+                                                </button>
+                                          
+                                        </td>
+                                        <td
+                                            class="text-center d-flex justify-content-center"
+                                        >
+                                            <form action="#" class="me-2">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-warning btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modalDialogScrollableLabelEdit"
+                                                >
+                                                    Edit
+                                                </button>
+                                            </form>
+
+                                            <form action="#">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-danger btn-sm"
+                                                >
+                                                    Delete
+                                                </button>
+                                            </form>
+                                        </td>
+
+                  <!--       //view report pop up -->
+                                        
+                                         <div
+        class="modal fade"
+        id="viewReportModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                       Report
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                style="height: 380px"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" style="height: 380px">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon bg-secondary"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon bg-secondary"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+                                      
+          <!--       // edit test pop up -->
+                            <div
+                                            class="modal fade"
+                                            id="modalDialogScrollableLabelEdit"
+                                            tabindex="-1"
+                                            aria-labelledby="modalDialogScrollableLabelEdit"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog modal-dialog-scrollable modal-md"
+                                            >
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5
+                                                            class="modal-title"
+                                                            id="modalDialogScrollableLabelEdit"
+                                                        >
+                                                            Edit Test
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"
+                                                        ></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Add Patient Form -->
+                                                        <form
+                                                            id="addPatientForm"
+                                                            enctype="multipart/form-data"
+                                                        >
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="testName"
+                                                                    class="form-label"
+                                                                    >Test
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="testName"
+                                                                    value="Blood test"
+                                                                    placeholder="Enter Test name like Blood Test"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="labotaryName"
+                                                                    class="form-label"
+                                                                    >Labotary
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="labotaryName"
+                                                                    value="Sun Pharma"
+                                                                    placeholder="Enter brand name like Sun Pharma"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="cost"
+                                                                    class="form-label"
+                                                                    >Cost</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="cost"
+                                                                    value="3000"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="date"
+                                                                    class="form-label"
+                                                                    >Date</label
+                                                                >
+                                                                <input
+                                                                    type="date"
+                                                                    class="form-control"
+                                                                    id="date"
+                                                                    value="2020-05-15"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="status"
+                                                                    class="form-label"
+                                                                    >Status</label
+                                                                >
+                                                                <select
+                                                                    class="form-select"
+                                                                    id="status"
+                                                                >
+                                                                    <option
+                                                                        value="no"
+                                                                    >
+                                                                        No
+                                                                    </option>
+                                                                    <option
+                                                                        value="yes"
+                                                                        selected
+                                                                    >
+                                                                        Yes
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    class="form-label"
+                                                                    >Upload for
+                                                                    report</label
+                                                                >
+                                                                <input
+                                                                    id="input-b1"
+                                                                    name="input-b1"
+                                                                    type="file"
+                                                                    class="form-control"
+                                                                />
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-end"
+                                                            >
+                                                                <form
+                                                                    action="#"
+                                                                >
+                                                                    <button
+                                                                        type="submit"
+                                                                        class="btn btn-primary"
+                                                                    >
+                                                                     Save Changes
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            2
+                                        </th>
+                                        <td class="text-center">Blood Test</td>
+                                        <td class="text-center">Sun Pharma</td>
+                                        <td class="text-center">3000</td>
+                                        <td class="text-center">yes</td>
+                                        <td class="text-center">15/05/2020</td>
+                                        <td class="text-center">
+                                          
+                                                <button
+                                                
+                                                    class="btn btn-primary btn-sm"
+                                                       data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportModal"
+
+                                                >
+                                                    View
+                                                </button>
+                                       
+                                        </td>
+                                        <td
+                                            class="text-center d-flex justify-content-center"
+                                        >
+                                            <form action="#" class="me-2">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-warning btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modalDialogScrollableLabelEdit"
+                                                >
+                                                    Edit
+                                                </button>
+                                            </form>
+                                            <form action="#">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-danger btn-sm"
+                                                >
+                                                    Delete
+                                                </button>
+                                            </form>
+                                        </td>
+
+<!--     // view report popup -->
+    <div
+        class="modal fade"
+        id="viewReportModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                       Report
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                style="height: 380px"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" style="height: 380px">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon bg-secondary"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon bg-secondary"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div><!-- 
+                 // edit test pop up -->
+                                        <div
+                                            class="modal fade"
+                                            id="modalDialogScrollableLabelEdit"
+                                            tabindex="-1"
+                                            aria-labelledby="modalDialogScrollableLabelEdit"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog modal-dialog-scrollable modal-md"
+                                            >
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5
+                                                            class="modal-title"
+                                                            id="modalDialogScrollableLabelEdit"
+                                                        >
+                                                            Edit Test
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"
+                                                        ></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Add Patient Form -->
+                                                        <form
+                                                            id="addPatientForm"
+                                                            enctype="multipart/form-data"
+                                                        >
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="testName"
+                                                                    class="form-label"
+                                                                    >Test
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="testName"
+                                                                    value="Blood test"
+                                                                    placeholder="Enter Test name like Blood Test"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="labotaryName"
+                                                                    class="form-label"
+                                                                    >Labotary
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="labotaryName"
+                                                                    value="Sun Pharma"
+                                                                    placeholder="Enter brand name like Sun Pharma"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="cost"
+                                                                    class="form-label"
+                                                                    >Cost</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="cost"
+                                                                    value="3000"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="date"
+                                                                    class="form-label"
+                                                                    >Date</label
+                                                                >
+                                                                <input
+                                                                    type="date"
+                                                                    class="form-control"
+                                                                    id="date"
+                                                                    value="2020-05-15"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="status"
+                                                                    class="form-label"
+                                                                    >Status</label
+                                                                >
+                                                                <select
+                                                                    class="form-select"
+                                                                    id="status"
+                                                                >
+                                                                    <option
+                                                                        value="no"
+                                                                    >
+                                                                        No
+                                                                    </option>
+                                                                    <option
+                                                                        value="yes"
+                                                                        selected
+                                                                    >
+                                                                        Yes
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    class="form-label"
+                                                                    >Upload for
+                                                                    report</label
+                                                                >
+                                                                <input
+                                                                    id="input-b1"
+                                                                    name="input-b1"
+                                                                    type="file"
+                                                                    class="form-control"
+                                                                />
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-end"
+                                                            >
+                                                                <form
+                                                                    action="#"
+                                                                >
+                                                                    <button
+                                                                        type="submit"
+                                                                        class="btn btn-primary"
+                                                                    >
+                                                                     Save Changes
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            3
+                                        </th>
+                                        <td class="text-center">Blood Test</td>
+                                        <td class="text-center">Sun Pharma</td>
+                                        <td class="text-center">3000</td>
+                                        <td class="text-center">yes</td>
+                                        <td class="text-center">15/05/2020</td>
+                                        <td class="text-center">
+                                          
+                                                <button
+                                                  
+                                                    class="btn btn-primary btn-sm"
+                                                       data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportModal"
+                                                >
+                                                    View
+                                                </button>
+                                           
+                                        </td>
+                                        <td
+                                            class="text-center d-flex justify-content-center"
+                                        >
+                                            <form action="#" class="me-2">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-warning btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modalDialogScrollableLabelEdit"
+                                                >
+                                                    Edit
+                                                </button>
+                                            </form>
+                                            <form action="#">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-danger btn-sm"
+                                                >
+                                                    Delete
+                                                </button>
+                                            </form>
+                                        </td>
+
+<!--  <-- view report popup --> 
+
+   <div
+        class="modal fade"
+        id="viewReportModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                       Report
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                style="height: 380px"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" style="height: 380px">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon bg-secondary"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon bg-secondary"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+<!-- edit test pop up -->
+                 
+                                        <div
+                                            class="modal fade"
+                                            id="modalDialogScrollableLabelEdit"
+                                            tabindex="-1"
+                                            aria-labelledby="modalDialogScrollableLabelEdit"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog modal-dialog-scrollable modal-md"
+                                            >
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5
+                                                            class="modal-title"
+                                                            id="modalDialogScrollableLabelEdit"
+                                                        >
+                                                            Edit Test
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"
+                                                        ></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Add Patient Form -->
+                                                        <form
+                                                            id="addPatientForm"
+                                                            enctype="multipart/form-data"
+                                                        >
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="testName"
+                                                                    class="form-label"
+                                                                    >Test
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="testName"
+                                                                    value="Blood test"
+                                                                    placeholder="Enter Test name like Blood Test"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="labotaryName"
+                                                                    class="form-label"
+                                                                    >Labotary
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="labotaryName"
+                                                                    value="Sun Pharma"
+                                                                    placeholder="Enter brand name like Sun Pharma"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="cost"
+                                                                    class="form-label"
+                                                                    >Cost</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="cost"
+                                                                    value="3000"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="date"
+                                                                    class="form-label"
+                                                                    >Date</label
+                                                                >
+                                                                <input
+                                                                    type="date"
+                                                                    class="form-control"
+                                                                    id="date"
+                                                                    value="2020-05-15"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="status"
+                                                                    class="form-label"
+                                                                    >Status</label
+                                                                >
+                                                                <select
+                                                                    class="form-select"
+                                                                    id="status"
+                                                                >
+                                                                    <option
+                                                                        value="no"
+                                                                    >
+                                                                        No
+                                                                    </option>
+                                                                    <option
+                                                                        value="yes"
+                                                                        selected
+                                                                    >
+                                                                        Yes
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    class="form-label"
+                                                                    >Upload for
+                                                                    report</label
+                                                                >
+                                                                <input
+                                                                    id="input-b1"
+                                                                    name="input-b1"
+                                                                    type="file"
+                                                                    class="form-control"
+                                                                />
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-end"
+                                                            >
+                                                                <form
+                                                                    action="#"
+                                                                >
+                                                                    <button
+                                                                        type="submit"
+                                                                        class="btn btn-primary"
+                                                                    >
+                                                                     Save Changes
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            4
+                                        </th>
+                                        <td class="text-center">Blood Test</td>
+                                        <td class="text-center">Sun Pharma</td>
+                                        <td class="text-center">3000</td>
+                                        <td class="text-center">yes</td>
+                                        <td class="text-center">15/05/2020</td>
+                                        <td class="text-center">
+                                           
+                                                <button
+                                                  
+                                                    class="btn btn-primary btn-sm"
+                                                       data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportModal"
+                                                >
+                                                    View
+                                                </button>
+                                         
+                                        </td>
+                                        <td
+                                            class="text-center d-flex justify-content-center"
+                                        >
+                                            <form action="#" class="me-2">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-warning btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modalDialogScrollableLabelEdit"
+                                                >
+                                                    Edit
+                                                </button>
+                                            </form>
+                                            <form action="#">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-danger btn-sm"
+                                                >
+                                                    Delete
+                                                </button>
+            
+                                            </form>
+    
+
+                                    </td>
+
+    
+<!-- view report popup -->
+
+    <div
+        class="modal fade"
+        id="viewReportModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                       Report
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                style="height: 380px"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" style="height: 380px">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon bg-secondary"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon bg-secondary"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+                 <!-- 
+                 // edit test pop up -->
+                                        <div
+                                            class="modal fade"
+                                            id="modalDialogScrollableLabelEdit"
+                                            tabindex="-1"
+                                            aria-labelledby="modalDialogScrollableLabelEdit"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog modal-dialog-scrollable modal-md"
+                                            >
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5
+                                                            class="modal-title"
+                                                            id="modalDialogScrollableLabelEdit"
+                                                        >
+                                                            Edit Test
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"
+                                                        ></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Add Patient Form -->
+                                                        <form
+                                                            id="addPatientForm"
+                                                            enctype="multipart/form-data"
+                                                        >
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="testName"
+                                                                    class="form-label"
+                                                                    >Test
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="testName"
+                                                                    value="Blood test"
+                                                                    placeholder="Enter Test name like Blood Test"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="labotaryName"
+                                                                    class="form-label"
+                                                                    >Labotary
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="labotaryName"
+                                                                    value="Sun Pharma"
+                                                                    placeholder="Enter brand name like Sun Pharma"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="cost"
+                                                                    class="form-label"
+                                                                    >Cost</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="cost"
+                                                                    value="3000"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="date"
+                                                                    class="form-label"
+                                                                    >Date</label
+                                                                >
+                                                                <input
+                                                                    type="date"
+                                                                    class="form-control"
+                                                                    id="date"
+                                                                    value="2020-05-15"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="status"
+                                                                    class="form-label"
+                                                                    >Status</label
+                                                                >
+                                                                <select
+                                                                    class="form-select"
+                                                                    id="status"
+                                                                >
+                                                                    <option
+                                                                        value="no"
+                                                                    >
+                                                                        No
+                                                                    </option>
+                                                                    <option
+                                                                        value="yes"
+                                                                        selected
+                                                                    >
+                                                                        Yes
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    class="form-label"
+                                                                    >Upload for
+                                                                    report</label
+                                                                >
+                                                                <input
+                                                                    id="input-b1"
+                                                                    name="input-b1"
+                                                                    type="file"
+                                                                    class="form-control"
+                                                                />
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-end"
+                                                            >
+                                                                <form
+                                                                    action="#"
+                                                                >
+                                                                    <button
+                                                                        type="submit"
+                                                                        class="btn btn-primary"
+                                                                    >
+                                                                     Save Changes
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-center">
+                                            5
+                                        </th>
+                                        <td class="text-center">Blood Test</td>
+                                        <td class="text-center">Sun Pharma</td>
+                                        <td class="text-center">3000</td>
+                                        <td class="text-center">yes</td>
+                                        <td class="text-center">15/05/2020</td>
+                                        <td class="text-center">
+                                          
+                                                <button
+                                                   
+                                                    class="btn btn-primary btn-sm"
+                                                       data-bs-toggle="modal"
+                                                    data-bs-target="#viewReportModal"
+                                                >
+                                                    View
+                                                </button>
+                                            
+                                        </td>
+                                        <td
+                                            class="text-center d-flex justify-content-center"
+                                        >
+                                            <form action="#" class="me-2">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-warning btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#modalDialogScrollableLabelEdit"
+                                                >
+                                                    Edit
+                                                </button>
+                                            </form>
+                                            <form action="#">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-danger btn-sm"
+                                                >
+                                                    Delete
+                                                </button>
+                                            </form>
+                                        </td>
+
+
+<!--  <--view report popup-->
+
+
+    <div
+        class="modal fade"
+        id="viewReportModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                       Report
+                    </h1>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div
+                                class="carousel-item active"
+                                style="height: 380px"
+                            >
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                            <div class="carousel-item" style="height: 380px">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Test_Report_3.png"
+                                    class="d-block w-100 object-fit-contain h-100"
+                                    alt="..."
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon bg-secondary"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon bg-secondary"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+                 <!-- 
+                 // edit test pop up -->
+                                        <div
+                                            class="modal fade"
+                                            id="modalDialogScrollableLabelEdit"
+                                            tabindex="-1"
+                                            aria-labelledby="modalDialogScrollableLabelEdit"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog modal-dialog-scrollable modal-md"
+                                            >
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5
+                                                            class="modal-title"
+                                                            id="modalDialogScrollableLabelEdit"
+                                                        >
+                                                            Edit Test
+                                                        </h5>
+                                                        <button
+                                                            type="button"
+                                                            class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"
+                                                        ></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Add Patient Form -->
+                                                        <form
+                                                            id="addPatientForm"
+                                                            enctype="multipart/form-data"
+                                                        >
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="testName"
+                                                                    class="form-label"
+                                                                    >Test
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="testName"
+                                                                    value="Blood test"
+                                                                    placeholder="Enter Test name like Blood Test"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="labotaryName"
+                                                                    class="form-label"
+                                                                    >Labotary
+                                                                    Name</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="labotaryName"
+                                                                    value="Sun Pharma"
+                                                                    placeholder="Enter brand name like Sun Pharma"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="cost"
+                                                                    class="form-label"
+                                                                    >Cost</label
+                                                                >
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control"
+                                                                    id="cost"
+                                                                    value="3000"
+                                                                    placeholder="Enter dosage"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="date"
+                                                                    class="form-label"
+                                                                    >Date</label
+                                                                >
+                                                                <input
+                                                                    type="date"
+                                                                    class="form-control"
+                                                                    id="date"
+                                                                    value="2020-05-15"
+                                                                    required
+                                                                />
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    for="status"
+                                                                    class="form-label"
+                                                                    >Status</label
+                                                                >
+                                                                <select
+                                                                    class="form-select"
+                                                                    id="status"
+                                                                >
+                                                                    <option
+                                                                        value="no"
+                                                                    >
+                                                                        No
+                                                                    </option>
+                                                                    <option
+                                                                        value="yes"
+                                                                        selected
+                                                                    >
+                                                                        Yes
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label
+                                                                    class="form-label"
+                                                                    >Upload for
+                                                                    report</label
+                                                                >
+                                                                <input
+                                                                    id="input-b1"
+                                                                    name="input-b1"
+                                                                    type="file"
+                                                                    class="form-control"
+                                                                />
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-end"
+                                                            >
+                                                                <form
+                                                                    action="#"
+                                                                >
+                                                                    <button
+                                                                        type="submit"
+                                                                        class="btn btn-primary"
+                                                                    >
+                                                                     Save Changes
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav
+                            aria-label="..."
+                            class="d-flex justify-content-end mt-3 pe-2"
+                        >
+                            <ul class="pagination me-1">
+                                <li class="prev-btn">
+                                    <a class="page-link disabled" href="#"
+                                        >Previous</a
+                                    >
+                                </li>
+                                <div class="page-container">
+                                    <div class="d-flex scroll-container">
+                                        <li class="page-item">
+                                            <a
+                                                class="page-link active-btn"
+                                                href="#"
+                                                >1</a
+                                            >
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">6</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">7</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">8</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">9</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">10</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">11</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">12</a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <li class="next-btn">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                &copy; Copyright <strong><span>NiceAdmin</span></strong
+                >. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+                Designed by
+                <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <a
+            href="#"
+            class="back-to-top d-flex align-items-center justify-content-center"
+            ><i class="bi bi-arrow-up-short"></i
+        ></a>
+
+        <!-- Vendor JS Files -->
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Template Main JS File -->
+        <script type="module" src="/views/js/add_Test.js"></script>
+    </body>
+</html>
