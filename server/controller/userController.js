@@ -6,10 +6,11 @@ const {
     jwtAuthMiddleware,
     generateToken,
 } = require("../middlewares/jwtAuthMiddleware");
-const bcrypt=require("bcrypt")
+const bcrypt = require("bcrypt")
 
 const createUserController = async (req, res) => {
     try {
+        /*
         const { first_name, last_name, email, password } = req.body;
         if (!first_name || !last_name || !email || !password) {
             return res.status(400).json({ error: "Missing required fields" });
@@ -24,6 +25,9 @@ const createUserController = async (req, res) => {
         const newUser = await userService.createUser(req.body);
         logger.info(`User created: ${newUser}`);
         res.status(201).json(newUser);
+        */
+
+        res.redirect('/showlogin');
     } catch (err) {
         logger.error(`Err: ${err}`);
         res.status(500).json({ message: err.message });
@@ -47,6 +51,7 @@ const logInController = async (req, res) => {
 
     try {
 
+        /*
         const { email, password } = req.body;
         const user = await User.findOne({ where: { email } });
 
@@ -66,6 +71,9 @@ const logInController = async (req, res) => {
         });
 
         res.status(200).json({ message: "User signed in successfully", token });
+        */
+
+        res.redirect('/dashboard');
     } catch (err) {
         logger.error(err);
         console.log(err)
@@ -92,9 +100,14 @@ const showSignUpForm = async (req, res) => {
     res.render('signup');
 }
 
-const landingPage = async (req, res) => {
+const dashboard = async (req, res) => {
+    res.render('dashBoard');
+}
+
+const landingPageController = async (req, res) => {
     res.render('landing_page');
 }
+
 
 module.exports = {
     createUserController,
@@ -103,7 +116,8 @@ module.exports = {
     updateUserController,
     showSignInForm,
     showSignUpForm,
-    landingPage
+    dashboard,
+    landingPageController
 };
 
 
