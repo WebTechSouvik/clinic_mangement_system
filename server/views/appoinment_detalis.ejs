@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joan&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  <!-- icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstarp CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="/views/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="/views/assets/website_logo/logo.png" alt="">
+
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+
+       <div class="ms-auto">
+        <a class="btn-login rounded-5" href="#about">Log out</a>
+      </div>
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+   <aside id="sidebar" class="sidebar">
+      <div>
+        <div class="sidebar-profile">
+          <img src="/assets/img/profile-img.jpg" />
+        </div>
+        <p class="text-center mt-2">John doe</p>
+      </div>
+
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="dashBoard.html">
+            <i class="bi bi-grid-fill"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
+          </a>
+        </li>
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="appionment.html"
+          >
+            <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
+          </a>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="fa-solid fa-pills"></i><span>Medicine</span>
+          </a>
+        </li>
+        <!-- End Tables Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-target="#charts-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
+          </a>
+        </li>
+        <!-- End Charts Nav -->
+      </ul>
+    </aside>
+
+    <main id="main" class="main">
+        <section style="background-color: #eee;">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-body text-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                                    alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                                <h5 class="my-3">John Smith</h5>
+                                <p class="text-muted ">6290054102</p>
+                                    <p class="text-muted">exampale@gmail.com</p>
+                                        
+                                <p class="text-muted ">Bay Area, San Francisco, CA</p>
+                              
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalDialogScrollable" tabindex="-1"
+                            aria-labelledby="modalDialogScrollableLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalDialogScrollableLabel">Add Patient</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Add Patient Form -->
+                                        <form id="addPatientForm" enctype="multipart/form-data">
+                                            <div class="mb-3">
+                                                <label for="firstName" class="form-label">Clinic Name</label>
+                                                <input type="text" class="form-control" id="firstName" value="Roy Clinic"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="lastName" class="form-label">Venue</label>
+                                                <input type="text" class="form-control" id="lastName" value="ABC Road , Sydney"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control" id="phoneNumber"
+                                                    value="+1 (555) 123-4567" required>
+                                            </div>
+                                          
+                                                <div class="mb-3">
+                                                <label for="doctor-category">Choose a doctor category:</label>
+                                                <select id="doctor-category" name="doctor-category" class="form-select" required>
+                                                    <option value="gp">General Practitioner (GP) / Family Medicine</option>
+                                                    <option value="pediatrician">Pediatrician</option>
+                                                    <option value="cardiologist">Cardiologist</option>
+                                                    <option value="dermatologist">Dermatologist</option>
+                                                    <option value="neurologist">Neurologist</option>
+                                                    <option value="psychiatrist">Psychiatrist</option>
+                                                    <option value="gynecologist">Gynecologist</option>
+                                                    <option value="obstetrician">Obstetrician</option>
+                                                    <option value="oncologist">Oncologist</option>
+                                                    <option value="orthopedic-surgeon">Orthopedic Surgeon</option>
+                                                    <option value="ophthalmologist">Ophthalmologist</option>
+                                                    <option value="otolaryngologist">Otolaryngologist (ENT Specialist)</option>
+                                                    <option value="gastroenterologist">Gastroenterologist</option>
+                                                    <option value="endocrinologist">Endocrinologist</option>
+                                                    <option value="pulmonologist">Pulmonologist</option>
+                                                    <option value="nephrologist">Nephrologist</option>
+                                                    <option value="rheumatologist">Rheumatologist</option>
+                                                    <option value="hematologist">Hematologist</option>
+                                                    <option value="urologist">Urologist</option>
+                                                    <option value="radiologist">Radiologist</option>
+                                                    <option value="anesthesiologist">Anesthesiologist</option>
+                                                    <option value="surgeon">Surgeon</option>
+                                                    <option value="infectious-disease-specialist">
+                                                        Infectious Disease Specialist
+                                                    </option>
+                                                    <option value="allergist">Allergist/Immunologist</option>
+                                                    <option value="podiatrist">Podiatrist</option>
+                                                    <option value="geriatrician">Geriatrician</option>
+                                                    <option value="emergency-medicine-physician">
+                                                        Emergency Medicine Physician
+                                                    </option>
+                                                    <option value="plastic-surgeon">Plastic Surgeon</option>
+                                                    <option value="pathologist">Pathologist</option>
+                                                    <option value="sports-medicine-specialist">
+                                                        Sports Medicine Specialist
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="date" class="form-label">Date</label>
+                                                <input type="date" class="form-control" id="date" value="2022-05-10">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="time" class="form-label">Time</label>
+                                                <div class="d-flex gap-4">
+                                                <input type="text" class="form-control flex-grow-3" id="time" required
+                                                    value="2.00">
+                                                 <select class="form-select"  required>
+                                                        <option>AM</option>
+                                                        <option>PM</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="firstName" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="firstName" value="Emily"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="LastName" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="LastName" value="Watson"
+                                                    required>
+                                            </div>
+                                             <div class="mb-3">
+                                                <label for="phoneNO" class="form-label">Phone No</label>
+                                                <input type="text" class="form-control" id="phoneNO" value="+91 7996934321"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="fees" class="form-label">Fees</label>
+                                                <input type="text" class="form-control" id="fees" value="400"
+                                                    required>
+                                            </div>
+                                         
+                                           
+
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card mb-4" style="padding: 11px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Clinic Name</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">Roy Clinic</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Veneu</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">ABC Road , Sydney</p>
+                                    </div>
+                                </div>
+                                <hr>
+                               
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Appoinment Category</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">Orthopedic</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Date</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">10/05/2022</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Time</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">2.00 pm</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Doctor Name</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0"> Dr. Emily Watson</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Doctor Phone No</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">+91 7996934321</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">Fees</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">500</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                          <div class="d-flex justify-content-end mb-2">
+                            
+                                    <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-warning ms-1" data-bs-toggle="modal"
+                                        data-bs-target="#modalDialogScrollable">Edit Details</button>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+
+ <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const countrySelect = document.getElementById("country");
+            const stateSelect = document.getElementById("state");
+            const citySelect = document.getElementById("city");
+
+            // Fetch countries when the page loads
+            fetchCountries();
+
+            // Fetch states when a country is selected
+            countrySelect.addEventListener("change", function () {
+                const country = countrySelect.value;
+                fetchStates(country);
+            });
+
+            // Fetch cities when a state is selected
+            stateSelect.addEventListener("change", function () {
+                const state = stateSelect.value;
+                fetchCities(state);
+            });
+
+            // Fetch list of countries using a public API
+            function fetchCountries() {
+                fetch("https://restcountries.com/v3.1/all", {
+                    method: 'GET'
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Loop through the country list
+                        data.forEach(country => {
+                            const option = document.createElement("option");
+                            option.value = country.cca2;  // Country code (use 'cca2' for 2-letter code)
+                            option.textContent = country.name.common; // Country name
+                            countrySelect.appendChild(option);
+                        });
+                    })
+                    .catch(error => console.error("Error fetching countries:", error));
+            }
+
+            // Fetch states for the selected country using an API (GeoDB Cities API)
+            function fetchStates(countryCode) {
+                // Clear previous states and cities
+                stateSelect.innerHTML = '<option value="" selected disabled>Choose state...</option>';
+                citySelect.innerHTML = '<option value="" selected disabled>Choose city...</option>';
+
+                fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/countries/${countryCode}/regions`, {
+                    method: 'GET',
+                    headers: {
+                        'x-rapidapi-key': '4dfd3a0172mshd7df77fa7e5d479p12ddefjsnbeb90a25a39d',
+                        'x-rapidapi-host': 'wft-geo-db.p.rapidapi.com'
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Check if data is an array before using forEach
+                        if (data.data && Array.isArray(data.data)) {
+                            data.data.forEach(state => {
+                                const option = document.createElement("option");
+                                option.value = state.isoCode;
+                                option.textContent = state.name;
+                                stateSelect.appendChild(option);
+                            });
+                        } else {
+                            console.error("Invalid state data:", data);
+                        }
+                    })
+                    .catch(error => console.error("Error fetching states:", error));
+            }
+
+            // Fetch cities for the selected state
+            function fetchCities(stateCode) {
+                // Clear previous cities
+                citySelect.innerHTML = '<option value="" selected disabled>Choose city...</option>';
+
+                fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities?regionCode=${stateCode}`, {
+                    method: 'GET',
+                    headers: {
+                        'x-rapidapi-key': '4dfd3a0172mshd7df77fa7e5d479p12ddefjsnbeb90a25a39d',
+                        'x-rapidapi-host': 'wft-geo-db.p.rapidapi.com'
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Check if data is an array before using forEach
+                        if (data.data && Array.isArray(data.data)) {
+                            data.data.forEach(city => {
+                                const option = document.createElement("option");
+                                option.value = city.city;
+                                option.textContent = city.city;
+                                citySelect.appendChild(option);
+                            });
+                        } else {
+                            console.error("Invalid city data:", data);
+                        }
+                    })
+                    .catch(error => console.error("Error fetching cities:", error));
+            }
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
