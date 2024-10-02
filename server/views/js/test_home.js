@@ -1,5 +1,5 @@
 
-import { tests } from "../data.js";
+import { tests } from "./data.js";
 
 
 
@@ -30,9 +30,9 @@ import { tests } from "../data.js";
                                         <td class="text-center">${content.test_name}</td>
                                         <td class="text-center">${content.date}</td>
                                         <td class="text-center">
-                                            <form action="/views/add_medicine.ejs" method="get" target="_blank">
+                                            <a href="/test/1234">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
-                                            </form>
+                                            </a>
                                         </td>
 
                                         <td class="text-center d-flex justify-content-center">

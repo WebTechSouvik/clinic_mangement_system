@@ -3,7 +3,8 @@ const showAppoinmentHome = async (req, res) => {
     res.render('appoinment_home');
 }
 
-const addAppoinment = async (req, res) => {
-    res.redirect('/appoinmnet/')
+const appoinmentDetalis = async (req, res) => {
+    console.log("ji")
+   res.render('appoinment_detalis')
 }
-module.exports = { showAppoinmentHome, addAppoinment };
+module.exports = { showAppoinmentHome, appoinmentDetalis };

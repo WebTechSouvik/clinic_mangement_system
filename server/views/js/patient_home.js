@@ -31,14 +31,14 @@ import { patients } from "./data.js";
         <td class="text-center">${content.gender}</td>
         <td class="text-center">${content.city}</td>
         <td class="text-center">
-          <form action="/patient/details" method="get" target="_blank">
+          <a href="/patient/details">
             <button type="submit" class="btn btn-primary btn-sm">View</button>
-          </form>
+          </a>
         </td>
         <td class="text-center">
-          <form action="#">
+       
             <button type="submit" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalDialogScrollableAppoinment">Appointment</button>
-          </form>
+        
           <div class="modal fade" id="modalDialogScrollableAppoinment" tabindex="-1" aria-labelledby="modalDialogScrollableLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-md">
               <div class="modal-content">
