@@ -1,4 +1,4 @@
-import { medicines } from "../data.js";
+import { medicines } from "./data.js";
 
 (function () {
 	let currentBtn = 1;
@@ -14,8 +14,8 @@ import { medicines } from "../data.js";
 
 	// load content inside table basis on page number
 	function loadTableContent(currentBtn) {
-		const start = currentBtn==1?currentBtn * 10 - 10:currentBtn *10-10-1 ;
-		const end = currentBtn *10-1;
+		const start = currentBtn == 1 ? currentBtn * 10 - 10 : currentBtn * 10 - 10 - 1;
+		const end = currentBtn * 10 - 1;
 		const contents = medicines.slice(start, end);
 		tableBody.innerHTML = "";
 		contents.forEach((content) => {
@@ -27,7 +27,7 @@ import { medicines } from "../data.js";
                                         <td class="text-center">${content.doctor_name}</td>
                                         <td class="text-center">${content.medicine_name}</td>
                                         <td class="text-center">
-                                            <form action="/views/add_medicine.ejs" method="get" target="_blank">
+                                            <form action="/medicine/viewMedicine" method="get" target="_blank">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
                                             </form>
                                         </td>
@@ -59,9 +59,8 @@ import { medicines } from "../data.js";
 		// scroll left for show next page button
 
 		if (currentBtn == pageShowEnd && val == 1) {
-			scrollContainer.style.transform = `translateX(${
-				currentPos - 45
-			}px)`;
+			scrollContainer.style.transform = `translateX(${currentPos - 45
+				}px)`;
 			currentPos -= 45;
 			pageShowEnd++;
 			pageShowStart++;
@@ -70,9 +69,8 @@ import { medicines } from "../data.js";
 		// scroll right for show previous page button
 
 		if (pageShowStart == currentBtn && val == -1) {
-			scrollContainer.style.transform = `translateX(${
-				currentPos + 45
-			}px)`;
+			scrollContainer.style.transform = `translateX(${currentPos + 45
+				}px)`;
 			currentPos += 45;
 			pageShowStart--;
 			pageShowEnd--;

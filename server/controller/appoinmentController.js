@@ -3,4 +3,7 @@ const showAppoinmentHome = async (req, res) => {
     res.render('appoinment_home');
 }
 
-module.exports = { showAppoinmentHome };
+const addAppoinment = async (req, res) => {
+    res.redirect('/appoinmnet/')
+}
+module.exports = { showAppoinmentHome, addAppoinment };

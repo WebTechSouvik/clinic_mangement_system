@@ -1,4 +1,4 @@
-import { tests } from "../data.js";
+import { tests } from "./data.js";
 
 (function () {
 	let currentBtn = 1;

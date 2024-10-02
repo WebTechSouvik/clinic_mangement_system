@@ -108,7 +108,9 @@ const landingPageController = async (req, res) => {
     res.render('landing_page');
 }
 
-
+const profile =  async(req,res)=>{
+    res.render('profile')
+}
 module.exports = {
     createUserController,
     logInController,
@@ -117,7 +119,8 @@ module.exports = {
     showSignInForm,
     showSignUpForm,
     dashboard,
-    landingPageController
+    landingPageController,
+    profile
 };
 
 

@@ -34,8 +34,9 @@
 
 
     <!-- Template Main CSS File -->
-    <link href="/views/css/style.css" rel="stylesheet">
-    <link href="/views/css/appoinment.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/appoinment.css" rel="stylesheet" />
 
     <!-- =======================================================
   * Template Name: NiceAdmin
@@ -50,83 +51,70 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
-
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="/views/assets/website_logo/logo.png" alt="">
-
+                <img src="/assets/website_logo/logo.png" alt="" />
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
-        </div><!-- End Logo -->
+        </div>
+        <!-- End Logo -->
 
-
-        <div class="ms-auto">
+        <!-- Container for Profile and Log out buttons -->
+        <div class="ms-auto d-flex align-items-center">
+            <!-- Profile button -->
+            <a class="btn-login rounded-5 me-3" href="/profile">Profile</a>
+            <!-- Log out button -->
             <a class="btn-login rounded-5" href="#about">Log out</a>
         </div>
-
     </header><!-- End Header -->
 
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
         <div>
             <div class="sidebar-profile">
-                <img src="/views/assets/img/profile-img.jpg" />
+                <img src="/assets/img/profile-img.jpg" />
             </div>
             <p class="text-center mt-2">John doe</p>
         </div>
 
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="dashBoard.html">
+                <a class="nav-link active" href="/dashboard">
                     <i class="bi bi-grid-fill"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <!-- End Dashboard Nav -->
 
-<<<<<<< HEAD
             <li class="nav-item">
-                <a class="nav-link active" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link" href="/patient/">
                     <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
                 </a>
             </li>
             <!-- End Components Nav -->
-=======
-        <li class="nav-item">
-          <a
-            class="nav-link active-sidebar"
-            data-bs-target="#components-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
-          </a>
-        </li>
-        <!-- End Components Nav -->
->>>>>>> a2a5dc4c58a8efc03f134b988e9e756b4dfb4e28
 
             <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="/appoinment/">
                     <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
                 </a>
             </li>
             <!-- End Forms Nav -->
 
             <li class="nav-item">
-                <a class="nav-link" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link" href="/medicine/">
                     <i class="fa-solid fa-pills"></i><span>Medicine</span>
                 </a>
             </li>
             <!-- End Tables Nav -->
 
             <li class="nav-item">
-                <a class="nav-link" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link" href="/test/">
                     <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
                 </a>
             </li>
             <!-- End Charts Nav -->
         </ul>
-    </aside><!-- End Sidebar -->
+    </aside>
 
     <main id="main" class="main">
         <section>
@@ -254,8 +242,31 @@
                                     </tr>
                                 </thead>
                                 <tbody id="table-body">
+                                    <tr>
+                                        <th scope="row" class="text-center">1</th>
+                                        <td class="text-center">Srijan Giri</td>
+                                        <td class="text-center">6290138496</td>
+                                        <td class="text-center">M</td>
+                                        <td class="text-center">Kolkata</td>
+                                        <td class="text-center">
+                                            <form action="/patient/details" method="get" target="_blank">
+                                                <button type="submit" class="btn btn-primary btn-sm">View</button>
+                                            </form>
+                                        </td>
+                                        <td class="text-center">
+                                            <form action="#">
+                                                <button type="submit"
+                                                    class="btn btn-success btn-sm">Appointment</button>
+                                            </form>
+                                        </td>
+                                        <td class="text-center d-flex justify-content-center">
 
-                                    <!-- Add more rows as needed -->
+                                            <form action="#">
+                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -312,16 +323,17 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> -->
 
     <!-- Vendor JS Files -->
 
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <!-- Template Main JS File -->
-    <script type="module" src="/views/js/patient_home.js"></script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/patient_home.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const countrySelect = document.getElementById("country");
