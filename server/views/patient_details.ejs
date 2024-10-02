@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <title>Patient detalis</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -72,61 +72,64 @@
         <div class="ms-auto d-flex align-items-center">
             <!-- Profile button -->
             <a class="btn-login rounded-5 me-3" href="/profile">Profile</a>
-            <!-- Log out button -->
-            <a class="btn-login rounded-5" href="#about">Log out</a>
+         
+     
         </div>
     </header><!-- End Header -->
 
     <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
-        <div>
-            <div class="sidebar-profile">
-                <img src="/assets/img/profile-img.jpg" />
-            </div>
-            <p class="text-center mt-2">John doe</p>
-        </div>
+     <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between">
+    <div>
+    <div>
+      <div class="sidebar-profile">
+        <img src="/assets/img/profile-img.jpg" />
+      </div>
+      <p class="text-center mt-2">John doe</p>
+    </div>
 
-        <ul class="sidebar-nav" id="sidebar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="/dashboard">
-                    <i class="bi bi-grid-fill"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-            <!-- End Dashboard Nav -->
+    <ul class="sidebar-nav" id="sidebar-nav mb-5">
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">
+          <i class="bi bi-grid-fill"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link active-sidebar" href="/patient">
+          <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
+        </a>
+      </li>
+      <!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="/appoinment/">
+          <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
+        </a>
+      </li>
+      <!-- End Forms Nav -->
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="/patient/">
-                    <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
-                </a>
-            </li>
-            <!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="/medicine">
+          <i class="fa-solid fa-pills"></i><span>Medicine</span>
+        </a>
+      </li>
+      <!-- End Tables Nav -->
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="/appoinment/">
-                    <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
-                </a>
-            </li>
-            <!-- End Forms Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link" href="/medicine/">
-                    <i class="fa-solid fa-pills"></i><span>Medicine</span>
-                </a>
-            </li>
-            <!-- End Tables Nav -->
-
-            <li class="nav-item">
-                <a class="nav-link" href="/test/">
-                    <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
-                </a>
-            </li>
-            <!-- End Charts Nav -->
-        </ul>
-    </aside>
-
+      <li class="nav-item">
+        <a class="nav-link" href="/test">
+          <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
+        </a>
+      </li>
+      <!-- End Charts Nav -->
+    </ul>
+    </div>
+    <div class="d-flex justify-content-center"><a class="btn-login rounded-5" href="#about">Log out</a></div>
+  </aside>
     <main id="main" class="main">
         <section style="background-color: #eee;">
             <div class="container py-3">

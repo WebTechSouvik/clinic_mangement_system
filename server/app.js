@@ -21,6 +21,7 @@ const userRouter = require('./routes/userRouter');
 const patientRouter = require("./routes/patientRouter.js")
 const appoinmentRouter = require('./routes/appoinmentRouter.js')
 const medicineRouter = require('./routes/medicineRouter.js');
+const testRouter=require('./routes/testRouter.js')
 
 
 app.use('/css', express.static(path.join(__dirname, 'views', 'css')));
@@ -39,7 +40,7 @@ app.use('/', userRouter);
 app.use("/patient", patientRouter)
 app.use('/appoinment', appoinmentRouter);
 app.use('/medicine', medicineRouter);
-
+app.use('/test',testRouter)
 
 
 

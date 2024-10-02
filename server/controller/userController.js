@@ -27,7 +27,7 @@ const createUserController = async (req, res) => {
         res.status(201).json(newUser);
         */
 
-        res.redirect('/showlogin');
+        res.redirect('/login');
     } catch (err) {
         logger.error(`Err: ${err}`);
         res.status(500).json({ message: err.message });

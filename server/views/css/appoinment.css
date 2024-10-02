@@ -15,6 +15,11 @@ thead th {
   }
   .btn-add:hover{
   	background-color: #114B5F;
+    color: #ffffff;
+  }
+  .btn-add-fill{
+    background-color: #114B5F !important;
+    color: #ffffff;
   }
   .active-btn{
     background-color:#114B5F !important;
