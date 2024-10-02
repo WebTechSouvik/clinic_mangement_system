@@ -29,26 +29,26 @@ import { appoinments } from "./data.js";
 
                                     
                                         <td class="text-center">
-                                            <form action="/views/add_medicine.ejs" method="get" target="_blank">
+                                            <a href="/appoinment/detalis">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
-                                            </form>
+                                            </a>
                                         </td>
                                           <td class="text-center">
-                                            <form action="/medicine/viewMedicine" method="get" target="_blank">
+                                            <a href="/medicine/1234">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
-                                            </form>
+                                            </a>
                                         </td>
                                           <td class="text-center">
-                                            <form action="/views/add_medicine.ejs" method="get" target="_blank">
+                                            <a href="/test/1234">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
-                                            </form>
+                                            </a>
                                         </td>
 
                                         <td class="text-center d-flex justify-content-center">
                                        
-                                            <form action="#">
+                                            <a href="">
                                                 <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                            </form>
+                                            </a>
                                         </td>`
 
 			tableBody.append(tr);
@@ -69,7 +69,7 @@ import { appoinments } from "./data.js";
 		// scroll left for show next page button
 
 		if (currentBtn == pageShowEnd && val == 1) {
-			scrollContainer.style.transform = `translateX(${currentPos - 45
+			scrollContainer.style.transa = `translateX(${currentPos - 45
 				}px)`;
 			currentPos -= 45;
 			pageShowEnd++;
@@ -79,7 +79,7 @@ import { appoinments } from "./data.js";
 		// scroll right for show previous page button           <td>${content.clinic_name}</td>
 
 		if (pageShowStart == currentBtn && val == -1) {
-			scrollContainer.style.transform = `translateX(${currentPos + 45
+			scrollContainer.style.transa = `translateX(${currentPos + 45
 				}px)`;
 			currentPos += 45;
 			pageShowStart--;

@@ -27,9 +27,9 @@ import { medicines } from "./data.js";
                                         <td class="text-center">${content.doctor_name}</td>
                                         <td class="text-center">${content.medicine_name}</td>
                                         <td class="text-center">
-                                            <form action="/medicine/viewMedicine" method="get" target="_blank">
+                                            <a href="/medicine/1234">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
-                                            </form>
+                                            </a>
                                         </td>
 
                                         <td class="text-center d-flex justify-content-center">

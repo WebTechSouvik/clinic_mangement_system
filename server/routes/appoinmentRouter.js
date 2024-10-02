@@ -4,7 +4,7 @@ const appoinmentController = require('../controller/appoinmentController');
 
 
 router.get('/', appoinmentController.showAppoinmentHome);
-router.post('/add', appoinmentController.addAppoinment);
+router.get('/detalis', appoinmentController.appoinmentDetalis);
 
 module.exports = router;
 

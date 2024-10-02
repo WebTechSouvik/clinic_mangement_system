@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <title>Dashboard - NiceAdmin Bootstrap Template</title>
+        <title>Test - All test of a appoinment</title>
         <meta content="" name="description" />
         <meta content="" name="keywords" />
 
@@ -47,8 +47,8 @@
         />
 
         <!-- Template Main CSS File -->
-        <link href="/views/css/style.css" rel="stylesheet" />
-        <link href="/views/css/appoinment.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
+        <link href="/css/appoinment.css" rel="stylesheet" />
 
         <!-- =======================================================
       * Template Name: NiceAdmin
@@ -64,83 +64,71 @@
         <header id="header" class="header fixed-top d-flex align-items-center">
             <div class="d-flex align-items-center justify-content-between">
                 <a href="index.html" class="logo d-flex align-items-center">
-                    <img src="/views/assets/website_logo/logo.png" alt="" />
+                    <img src="/assets/website_logo/logo.png" alt="" />
                 </a>
                 <i class="bi bi-list toggle-sidebar-btn"></i>
             </div>
             <!-- End Logo -->
 
             <div class="ms-auto">
-                <a class="btn-login rounded-5" href="#about">Log out</a>
+                <a class="btn-login rounded-5" href="/profile">Profile</a>
             </div>
         </header>
         <!-- End Header -->
 
         <!-- ======= Sidebar ======= -->
-        <aside id="sidebar" class="sidebar">
-            <div>
-                <div class="sidebar-profile">
-                    <img src="/assets/img/profile-img.jpg" />
-                </div>
-                <p class="text-center mt-2">John doe</p>
-            </div>
+         <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between">
+    <div>
+    <div>
+      <div class="sidebar-profile">
+        <img src="/assets/img/profile-img.jpg" />
+      </div>
+      <p class="text-center mt-2">John doe</p>
+    </div>
 
-            <ul class="sidebar-nav" id="sidebar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="dashBoard.html">
-                        <i class="bi bi-grid-fill"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <!-- End Dashboard Nav -->
+    <ul class="sidebar-nav" id="sidebar-nav mb-5">
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">
+          <i class="bi bi-grid-fill"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
 
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        data-bs-target="#components-nav"
-                        data-bs-toggle="collapse"
-                        href="#"
-                    >
-                        <i class="fa-solid fa-hospital-user"></i
-                        ><span>Patient</span>
-                    </a>
-                </li>
-                <!-- End Components Nav -->
+      <li class="nav-item">
+        <a class="nav-link" href="/patient">
+          <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
+        </a>
+      </li>
+      <!-- End Components Nav -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="appionment.html">
-                        <i class="fa-regular fa-calendar-check"></i
-                        ><span>Appoinment</span>
-                    </a>
-                </li>
-                <!-- End Forms Nav -->
+      <li class="nav-item">
+        <a class="nav-link" href="/appoinment/">
+          <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
+        </a>
+      </li>
+      <!-- End Forms Nav -->
 
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        data-bs-target="#tables-nav"
-                        data-bs-toggle="collapse"
-                        href="#"
-                    >
-                        <i class="fa-solid fa-pills"></i><span>Medicine</span>
-                    </a>
-                </li>
-                <!-- End Tables Nav -->
 
-                <li class="nav-item">
-                    <a
-                        class="nav-link active-sidebar"
-                        data-bs-target="#charts-nav"
-                        data-bs-toggle="collapse"
-                        href="#"
-                    >
-                        <i class="bi bi-clipboard2-pulse-fill"></i
-                        ><span>Test</span>
-                    </a>
-                </li>
-                <!-- End Charts Nav -->
-            </ul>
-        </aside>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/medicine">
+          <i class="fa-solid fa-pills"></i><span>Medicine</span>
+        </a>
+      </li>
+      <!-- End Tables Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link active-sidebar" href="/test">
+          <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
+        </a>
+      </li>
+      <!-- End Charts Nav -->
+    </ul>
+    </div>
+    <div class="d-flex justify-content-center"><a class="btn-login rounded-5" href="#about">Log out</a></div>
+  </aside>
 
         <main id="main" class="main">
             <section>
@@ -245,7 +233,7 @@
                         <div class="card">
                             <div class="card-body p-0">
                                 <img
-                                    src="/views/assets/img/profile-img.jpg"
+                                    src="/assets/img/profile-img.jpg"
                                     alt="Patient Image"
                                     class="img-fluid shadow"
                                 />
@@ -255,16 +243,25 @@
                 </div>
             </section>
             <section class="my-3">
-                <form action="#">
+                <div class="d-flex justify-content-end gap-3">
+                        <a href="/test/report">             <button type="button" class="btn  btn-add">
+                                        Report 
+                             
+                               
+                            </button></a>
+                          
+
+           
                     <button
                         type="submit"
-                        class="btn btn-success text-white"
+                        class="btn btn-add-fill"
                         data-bs-toggle="modal"
                         data-bs-target="#modalDialogScrollable"
                     >
                         Add Test
                     </button>
-                </form>
+                    </div>
+            
 
 
 <!-- // add test popup -->
@@ -454,16 +451,16 @@
                                         <td
                                             class="text-center d-flex justify-content-center"
                                         >
-                                            <form action="#" class="me-2">
+                                           
                                                 <button
                                                     type="submit"
-                                                    class="btn btn-warning btn-sm"
+                                                    class="btn btn-warning btn-sm me-2"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#modalDialogScrollableLabelEdit"
                                                 >
                                                     Edit
                                                 </button>
-                                            </form>
+                                            
 
                                             <form action="#">
                                                 <button
@@ -725,16 +722,16 @@
                                         <td
                                             class="text-center d-flex justify-content-center"
                                         >
-                                            <form action="#" class="me-2">
+                                           
                                                 <button
                                                     type="submit"
-                                                    class="btn btn-warning btn-sm"
+                                                    class="btn btn-warning btn-sm me-2"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#modalDialogScrollableLabelEdit"
                                                 >
                                                     Edit
                                                 </button>
-                                            </form>
+                                            
                                             <form action="#">
                                                 <button
                                                     type="submit"
@@ -992,16 +989,16 @@
                                         <td
                                             class="text-center d-flex justify-content-center"
                                         >
-                                            <form action="#" class="me-2">
+                                           
                                                 <button
                                                     type="submit"
-                                                    class="btn btn-warning btn-sm"
+                                                    class="btn btn-warning btn-sm me-2"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#modalDialogScrollableLabelEdit"
                                                 >
                                                     Edit
                                                 </button>
-                                            </form>
+                                            
                                             <form action="#">
                                                 <button
                                                     type="submit"
@@ -1262,16 +1259,16 @@
                                         <td
                                             class="text-center d-flex justify-content-center"
                                         >
-                                            <form action="#" class="me-2">
+                                           
                                                 <button
                                                     type="submit"
-                                                    class="btn btn-warning btn-sm"
+                                                    class="btn btn-warning btn-sm me-2"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#modalDialogScrollableLabelEdit"
                                                 >
                                                     Edit
                                                 </button>
-                                            </form>
+                                            
                                             <form action="#">
                                                 <button
                                                     type="submit"
@@ -1535,16 +1532,16 @@
                                         <td
                                             class="text-center d-flex justify-content-center"
                                         >
-                                            <form action="#" class="me-2">
+                                           
                                                 <button
                                                     type="submit"
-                                                    class="btn btn-warning btn-sm"
+                                                    class="btn btn-warning btn-sm me-2"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#modalDialogScrollableLabelEdit"
                                                 >
                                                     Edit
                                                 </button>
-                                            </form>
+                                            
                                             <form action="#">
                                                 <button
                                                     type="submit"
@@ -1879,6 +1876,6 @@
 
         <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Template Main JS File -->
-        <script type="module" src="/views/js/add_Test.js"></script>
+        <script type="module" src="/js/add_Test.js"></script>
     </body>
 </html>

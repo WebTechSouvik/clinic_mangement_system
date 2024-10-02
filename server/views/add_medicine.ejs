@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <title>Medicine - All medicine of a appoinment</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -60,63 +60,65 @@
         <div class="ms-auto d-flex align-items-center">
             <!-- Profile button -->
             <a class="btn-login rounded-5 me-3" href="/profile">Profile</a>
-            <!-- Log out button -->
-            <a class="btn-login rounded-5" href="#about">Log out</a>
+       
         </div>
     </header>
 
     <!-- End Header -->
 
     <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
-        <div>
-            <div class="sidebar-profile">
-                <img src="/assets/img/profile-img.jpg" />
-            </div>
-            <p class="text-center mt-2">John doe</p>
-        </div>
+     <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between">
+    <div>
+    <div>
+      <div class="sidebar-profile">
+        <img src="/assets/img/profile-img.jpg" />
+      </div>
+      <p class="text-center mt-2">John doe</p>
+    </div>
 
-        <ul class="sidebar-nav" id="sidebar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="/dashboard">
-                    <i class="bi bi-grid-fill"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-            <!-- End Dashboard Nav -->
+    <ul class="sidebar-nav" id="sidebar-nav mb-5">
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">
+          <i class="bi bi-grid-fill"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="/patient/">
-                    <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
-                </a>
-            </li>
-            <!-- End Components Nav -->
+      <li class="nav-item">
+        <a class="nav-link" href="/patient">
+          <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
+        </a>
+      </li>
+      <!-- End Components Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="/appoinment/">
-                    <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
-                </a>
-            </li>
-            <!-- End Forms Nav -->
-
-
-            <li class="nav-item">
-                <a class="nav-link" href="/medicine/">
-                    <i class="fa-solid fa-pills"></i><span>Medicine</span>
-                </a>
-            </li>
-            <!-- End Tables Nav -->
+      <li class="nav-item">
+        <a class="nav-link" href="/appoinment/">
+          <i class="fa-regular fa-calendar-check"></i><span>Appoinment</span>
+        </a>
+      </li>
+      <!-- End Forms Nav -->
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="/test/">
-                    <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
-                </a>
-            </li>
-            <!-- End Charts Nav -->
-        </ul>
-    </aside>
 
+      <li class="nav-item">
+        <a class="nav-link active-sidebar" href="/medicine">
+          <i class="fa-solid fa-pills"></i><span>Medicine</span>
+        </a>
+      </li>
+      <!-- End Tables Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="/test">
+          <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
+        </a>
+      </li>
+      <!-- End Charts Nav -->
+    </ul>
+    </div>
+    <div class="d-flex justify-content-center"><a class="btn-login rounded-5" href="#about">Log out</a></div>
+  </aside>
     <main id="main" class="main">
         <section>
             <div class="row">
@@ -187,17 +189,17 @@
             </div>
         </section>
         <section class="my-3">
-            <form action="#">
+          
                 <button type="submit" class="btn btn-success text-white" data-bs-toggle="modal"
                     data-bs-target="#modalDialogScrollable">Add Medicine</button>
-            </form>
+        
 
             <div class="modal fade" id="modalDialogScrollable" tabindex="-1"
                 aria-labelledby="modalDialogScrollableLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable modal-md">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalDialogScrollableLabel">Add Patient</h5>
+                            <h5 class="modal-title" id="modalDialogScrollableLabel">Add Medicine</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -234,7 +236,7 @@
 
                                 <div class="d-flex justify-content-end">
                                     <form action="#">
-                                        <button type="submit" class="btn btn-primary">Add Patient</button>
+                                        <button type="submit" class="btn btn-primary">Add Medicine</button>
                                     </form>
                                 </div>
                             </form>
@@ -270,10 +272,10 @@
                                     <td class="text-center">Rs.500</td>
                                     <td class="text-center">take beefore food...</td>
                                     <td class="text-center d-flex justify-content-center">
-                                        <form action="#" class="me-2">
-                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                      
+                                            <button type="submit" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
                                                 data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
-                                        </form>
+                                        
 
                                         <form action="#">
                                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
@@ -329,7 +331,7 @@
                                                         <div class="d-flex justify-content-end">
                                                             <form action="#">
                                                                 <button type="submit"
-                                                                    class="btn btn-primary">Edit</button>
+                                                                    class="btn btn-primary">Save</button>
                                                             </form>
                                                         </div>
                                                     </form>
@@ -347,10 +349,10 @@
                                     <td class="text-center">Rs.500</td>
                                     <td class="text-center">take beefore food...</td>
                                     <td class="text-center d-flex justify-content-center">
-                                        <form action="#" class="me-2">
-                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                      
+                                            <button type="submit" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
                                                 data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
-                                        </form>
+                                        
                                         <form action="#">
                                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                         </form>
@@ -405,7 +407,7 @@
                                                         <div class="d-flex justify-content-end">
                                                             <form action="#">
                                                                 <button type="submit"
-                                                                    class="btn btn-primary">Edit</button>
+                                                                    class="btn btn-primary">Save</button>
                                                             </form>
                                                         </div>
                                                     </form>
@@ -423,10 +425,10 @@
                                     <td class="text-center">Rs.500</td>
                                     <td class="text-center">take beefore food...</td>
                                     <td class="text-center d-flex justify-content-center">
-                                        <form action="#" class="me-2">
-                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                      
+                                            <button type="submit" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
                                                 data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
-                                        </form>
+                                        
                                         <form action="#">
                                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                         </form>
@@ -481,7 +483,7 @@
                                                         <div class="d-flex justify-content-end">
                                                             <form action="#">
                                                                 <button type="submit"
-                                                                    class="btn btn-primary">Edit</button>
+                                                                    class="btn btn-primary">Save</button>
                                                             </form>
                                                         </div>
                                                     </form>
@@ -499,10 +501,10 @@
                                     <td class="text-center">Rs.500</td>
                                     <td class="text-center">take beefore food...</td>
                                     <td class="text-center d-flex justify-content-center">
-                                        <form action="#" class="me-2">
-                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                      
+                                            <button type="submit" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
                                                 data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
-                                        </form>
+                                        
                                         <form action="#">
                                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                         </form>
@@ -557,7 +559,7 @@
                                                         <div class="d-flex justify-content-end">
                                                             <form action="#">
                                                                 <button type="submit"
-                                                                    class="btn btn-primary">Edit</button>
+                                                                    class="btn btn-primary">Save</button>
                                                             </form>
                                                         </div>
                                                     </form>
@@ -575,10 +577,10 @@
                                     <td class="text-center">Rs.500</td>
                                     <td class="text-center">take beefore food...</td>
                                     <td class="text-center d-flex justify-content-center">
-                                        <form action="#" class="me-2">
-                                            <button type="submit" class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                      
+                                            <button type="submit" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
                                                 data-bs-target="#modalDialogScrollableLabelEdit">Edit</button>
-                                        </form>
+                                        
                                         <form action="#">
                                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                         </form>
@@ -633,7 +635,7 @@
                                                         <div class="d-flex justify-content-end">
                                                             <form action="#">
                                                                 <button type="submit"
-                                                                    class="btn btn-primary">Edit</button>
+                                                                    class="btn btn-primary">Save</button>
                                                             </form>
                                                         </div>
                                                     </form>

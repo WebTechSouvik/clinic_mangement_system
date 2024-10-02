@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Dashboard</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -107,14 +107,15 @@
       <!-- Profile button -->
       <a class="btn-login rounded-5 me-3" href="/profile">Profile</a>
       <!-- Log out button -->
-      <a class="btn-login rounded-5" href="#about">Log out</a>
+      
     </div>
   </header>
 
   <!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between">
+    <div>
     <div>
       <div class="sidebar-profile">
         <img src="/assets/img/profile-img.jpg" />
@@ -122,9 +123,9 @@
       <p class="text-center mt-2">John doe</p>
     </div>
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav mb-5">
       <li class="nav-item">
-        <a class="nav-link active" href="/dashboard/">
+        <a class="nav-link active-sidebar" href="/dashboard">
           <i class="bi bi-grid-fill"></i>
           <span>Dashboard</span>
         </a>
@@ -132,7 +133,7 @@
       <!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link" href="/patient/">
+        <a class="nav-link" href="/patient">
           <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
         </a>
       </li>
@@ -148,7 +149,7 @@
 
 
       <li class="nav-item">
-        <a class="nav-link" href="/medicine/">
+        <a class="nav-link" href="/medicine">
           <i class="fa-solid fa-pills"></i><span>Medicine</span>
         </a>
       </li>
@@ -156,12 +157,14 @@
 
 
       <li class="nav-item">
-        <a class="nav-link" href="/test/">
+        <a class="nav-link" href="/test">
           <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
         </a>
       </li>
       <!-- End Charts Nav -->
     </ul>
+    </div>
+    <div class="d-flex justify-content-center"><a class="btn-login rounded-5" href="#about">Log out</a></div>
   </aside>
 
   <!-- End Sidebar-->

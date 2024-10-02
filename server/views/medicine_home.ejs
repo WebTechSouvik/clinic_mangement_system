@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Medicine - All medicines of user</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -52,7 +52,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="/assets/img/logo.png" alt="" />
+        <img src="/assets/website_logo/logo.png" alt="" />
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
@@ -62,15 +62,15 @@
     <div class="ms-auto d-flex align-items-center">
       <!-- Profile button -->
       <a class="btn-login rounded-5 me-3" href="/profile">Profile</a>
-      <!-- Log out button -->
-      <a class="btn-login rounded-5" href="#about">Log out</a>
+   
     </div>
   </header>
 
   <!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+   <aside id="sidebar" class="sidebar d-flex flex-column justify-content-between">
+    <div>
     <div>
       <div class="sidebar-profile">
         <img src="/assets/img/profile-img.jpg" />
@@ -78,17 +78,18 @@
       <p class="text-center mt-2">John doe</p>
     </div>
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav mb-5">
       <li class="nav-item">
-        <a class="nav-link active" href="/dashboard/">
+        <a class="nav-link" href="/dashboard">
           <i class="bi bi-grid-fill"></i>
           <span>Dashboard</span>
         </a>
       </li>
+
       <!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link" href="/patient/">
+        <a class="nav-link" href="/patient">
           <i class="fa-solid fa-hospital-user"></i><span>Patient</span>
         </a>
       </li>
@@ -101,42 +102,43 @@
       </li>
       <!-- End Forms Nav -->
 
+
+
       <li class="nav-item">
-        <a class="nav-link" href="/medicine/">
+        <a class="nav-link active-sidebar" href="/medicine">
           <i class="fa-solid fa-pills"></i><span>Medicine</span>
         </a>
       </li>
       <!-- End Tables Nav -->
 
 
-       
-<li class="nav-item">
-        <a class="nav-link" href="/test/">
+      <li class="nav-item">
+        <a class="nav-link" href="/test">
           <i class="bi bi-clipboard2-pulse-fill"></i><span>Test</span>
         </a>
       </li>
       <!-- End Charts Nav -->
-       
-      </ul>
-    </aside>
-
+    </ul>
+    </div>
+    <div class="d-flex justify-content-center"><a class="btn-login rounded-5" href="#about">Log out</a></div>
+  </aside>
     <main id="main" class="main">
         <section>
             <div class="container">
-                <div class="row my-3">
-                    <div class="col-lg-10 col-md-10 col-sm-10">
+                <div class="d-flex my-3 justify-content-between gap-2">
+                    <div class="col-lg-11 col-md-10 col-sm-10">
                         <div class="input-group">
                             <span class="input-group-text"><i class="bi bi-search"></i></span>
                             <input type="text" class="form-control" placeholder="Search patient with medicine">
                         </div>
 
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2">
                         <form action="#">
                             <!-- <button class="btn btn-outline-success"></button> -->
-                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-add" data-bs-toggle="modal"
                                 data-bs-target="#modalDialogScrollable">
-                                Search Patient
+                                Search
                             </button>
                         </form>
 
