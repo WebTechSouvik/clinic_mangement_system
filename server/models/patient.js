@@ -9,12 +9,12 @@ module.exports = (sequelize, DataTypes) => {
       });
 
 
-      Patient.belongsTo(models.Address,{
-        foreignKey:"address_id"
+      Patient.hasMany(models.Address, {
+        foreignKey: "address_id"
       })
 
-       Patient.hasMany(models.Appoinment,{
-        foreignKey:"patient_details_id"
+      Patient.hasMany(models.Appoinment, {
+        foreignKey: "patient_details_id"
 
       })
     }
@@ -54,10 +54,11 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     {
-      timestamps: true,
+      timestamps: true,  // Enable timestamps
       sequelize,
       modelName: "Patient",
-    },
+    }
   );
+
   return Patient;
 };

@@ -1,4 +1,4 @@
-import { appoinments } from "../data.js";
+import { appoinments } from "./data.js";
 
 (function () {
 	let currentBtn = 1;
@@ -11,6 +11,7 @@ import { appoinments } from "../data.js";
 	const prevBtn = document.querySelector(".prev-btn");
 	const nextBtn = document.querySelector(".next-btn");
 	const tableBody = document.querySelector("#table-body");
+	console.log(tableBody)
 
 	// load content inside table basis on page number
 	function loadTableContent(currentBtn) {
@@ -33,7 +34,7 @@ import { appoinments } from "../data.js";
                                             </form>
                                         </td>
                                           <td class="text-center">
-                                            <form action="/views/add_medicine.ejs" method="get" target="_blank">
+                                            <form action="/medicine/viewMedicine" method="get" target="_blank">
                                                 <button type="submit" class="btn btn-primary btn-sm">View</button>
                                             </form>
                                         </td>
@@ -54,6 +55,7 @@ import { appoinments } from "../data.js";
 		});
 	}
 
+
 	// highlight the current page button on click previous and next button
 
 	function toggleBtn(e, val, max) {
@@ -67,20 +69,18 @@ import { appoinments } from "../data.js";
 		// scroll left for show next page button
 
 		if (currentBtn == pageShowEnd && val == 1) {
-			scrollContainer.style.transform = `translateX(${
-				currentPos - 45
-			}px)`;
+			scrollContainer.style.transform = `translateX(${currentPos - 45
+				}px)`;
 			currentPos -= 45;
 			pageShowEnd++;
 			pageShowStart++;
 		}
 
 		// scroll right for show previous page button           <td>${content.clinic_name}</td>
-                      
+
 		if (pageShowStart == currentBtn && val == -1) {
-			scrollContainer.style.transform = `translateX(${
-				currentPos + 45
-			}px)`;
+			scrollContainer.style.transform = `translateX(${currentPos + 45
+				}px)`;
 			currentPos += 45;
 			pageShowStart--;
 			pageShowEnd--;

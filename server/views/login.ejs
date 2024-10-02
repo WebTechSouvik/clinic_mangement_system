@@ -18,20 +18,46 @@
 
         .illustration {
             width: 100%;
-            /* max-width: 382px; */
         }
 
         .login-box {
-            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
             padding: 2rem;
             background-color: #F8F9FA;
             max-width: 393px;
             width: 100%;
         }
 
+        .social-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login_text {
+            margin-right: 15px;
+            font-size: 1.25rem;
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
         .social-buttons a {
-            margin-right: 10px;
             font-size: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
         }
 
         .divider {
@@ -64,21 +90,12 @@
             .login-box {
                 padding: 1rem;
             }
-
-            .login_text {
-                padding-right: 90px;
-            }
-
-
         }
 
         @media screen and (max-width: 1600px) {
-
             .login_text {
-                padding-right: 89px;
+                margin-right: 10px;
             }
-
-
         }
     </style>
 </head>
@@ -93,8 +110,8 @@
 
             <div class="col-lg-6 d-flex justify-content-center align-items-center">
                 <div class="login-box">
-                    <div class="d-flex justify-content-center mb-3">
-                        <h4 class="text-center login_text">Sign in with</h4>
+                    <div class="social-section mb-3">
+                        <h4 class="login_text">Sign in with</h4>
                         <div class="social-buttons">
                             <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="text-danger"><i class="bi bi-google"></i></a>
@@ -104,7 +121,7 @@
 
                     <div class="divider">OR</div>
 
-                    <form>
+                    <form action="/login" method="post">
                         <div class="mb-3">
                             <input type="email" class="form-control" placeholder="Enter email" required>
                         </div>
@@ -124,7 +141,16 @@
                             <button type="submit" class="btn btn-primary">LOGIN</button>
                         </div>
                     </form>
+                    <div class="text-center mt-3">
+                        <a href="/signup" type="get" class="text-decoration-none">Don't have an account? Register
+                            here</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
+</body>
+
+</html>

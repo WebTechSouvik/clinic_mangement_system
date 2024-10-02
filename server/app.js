@@ -19,10 +19,15 @@ app.use(cookieParser());
 
 const userRouter = require('./routes/userRouter');
 const patientRouter = require("./routes/patientRouter.js")
+const appoinmentRouter = require('./routes/appoinmentRouter.js')
+const medicineRouter = require('./routes/medicineRouter.js');
 
 
+app.use('/css', express.static(path.join(__dirname, 'views', 'css')));
+app.use('/js', express.static(path.join(__dirname, 'views', 'js')));
 app.use('/assets', express.static(path.join(__dirname, 'views', 'assets')));
-app.use("/views",express.static(path.join(__dirname,"views")))
+
+// app.use("/views", express.static(path.join(__dirname, "views", 'assets')))
 app.use(cookieParser());
 app.set('view engine', 'ejs');
 
@@ -30,9 +35,11 @@ app.set('view engine', 'ejs');
 
 
 
-app.use('/user', userRouter);
-app.use("/patient",patientRouter)
-app.use('/', helloRouter);
+app.use('/', userRouter);
+app.use("/patient", patientRouter)
+app.use('/appoinment', appoinmentRouter);
+app.use('/medicine', medicineRouter);
+
 
 
 

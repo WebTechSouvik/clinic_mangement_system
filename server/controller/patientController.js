@@ -7,6 +7,8 @@ const {
 } = require("../services/patientService");
 const asyncHandeler = require("../utils/asyncHandelaer");
 
+
+
 const createPatientController = asyncHandeler(async (req, res) => {
 	const id = req.user.id;
 
@@ -36,14 +38,30 @@ const getDeatilsOfPatient = asyncHandeler(async (req, res) => {
 
 	const patientDetalis = await getPatientsDetailsByID(id);
 
-	
+
 	return res.status(200).json({ patientDetalis });
 });
+
+const showPatientHome = async (req, res) => {
+	res.render('patient_home')
+};
+
+
+const patientDetails = async (req, res) => {
+	res.render('patient_details');
+}
+
+// const addAppoinment = async (req, res) => {
+// 	res.redirect('/appoinmnet/')
+// }
 
 module.exports = {
 	createPatientController,
 	getAllPatientController,
 	getDeatilsOfPatient,
+	showPatientHome,
+	patientDetails,
+	// addAppoinment
 };
 
-   
+
